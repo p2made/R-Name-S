@@ -43,6 +43,9 @@
 		EB51AD4B20B2A8AC00E703D7 /* R-Name-Bridging-Header.h in Sources */ = {isa = PBXBuildFile; fileRef = EB51AD4820B2A8AB00E703D7 /* R-Name-Bridging-Header.h */; };
 		EB51AD4C20B2A8AC00E703D7 /* R-NameTests-Bridging-Header.h in Sources */ = {isa = PBXBuildFile; fileRef = EB51AD4920B2A8AB00E703D7 /* R-NameTests-Bridging-Header.h */; };
 		EB51AD4D20B2A8AC00E703D7 /* R-NameUITests-Bridging-Header.h in Sources */ = {isa = PBXBuildFile; fileRef = EB51AD4A20B2A8AB00E703D7 /* R-NameUITests-Bridging-Header.h */; };
+		EB51AD4F20B2A97100E703D7 /* ControllerDefinitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB51AD4E20B2A97100E703D7 /* ControllerDefinitions.swift */; };
+		EB51AD5020B2A97100E703D7 /* ControllerDefinitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB51AD4E20B2A97100E703D7 /* ControllerDefinitions.swift */; };
+		EB51AD5120B2A97100E703D7 /* ControllerDefinitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB51AD4E20B2A97100E703D7 /* ControllerDefinitions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +110,7 @@
 		EB51AD4820B2A8AB00E703D7 /* R-Name-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj.h; path = "R-Name-Bridging-Header.h"; sourceTree = "<group>"; };
 		EB51AD4920B2A8AB00E703D7 /* R-NameTests-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj.h; path = "R-NameTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		EB51AD4A20B2A8AB00E703D7 /* R-NameUITests-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj.h; path = "R-NameUITests-Bridging-Header.h"; sourceTree = "<group>"; };
+		EB51AD4E20B2A97100E703D7 /* ControllerDefinitions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerDefinitions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -243,6 +247,7 @@
 		EB51AD4520B2A84F00E703D7 /* Definitions */ = {
 			isa = PBXGroup;
 			children = (
+				EB51AD4E20B2A97100E703D7 /* ControllerDefinitions.swift */,
 				EB51AD4620B2A89C00E703D7 /* Definitions.swift */,
 			);
 			path = Definitions;
@@ -400,6 +405,7 @@
 				EB51AD2C20B2A7C800E703D7 /* FilesRenamer.m in Sources */,
 				EB51AD3A20B2A7C800E703D7 /* RenamedPathPairContainer.h in Sources */,
 				EB51AD4320B2A7C800E703D7 /* StringsManager.h in Sources */,
+				EB51AD4F20B2A97100E703D7 /* ControllerDefinitions.swift in Sources */,
 				EB51AD4420B2A7C800E703D7 /* FilesRenamer.h in Sources */,
 				EB51AD3520B2A7C800E703D7 /* TransparentDraggedWindow.h in Sources */,
 				EB51AD4B20B2A8AC00E703D7 /* R-Name-Bridging-Header.h in Sources */,
@@ -418,6 +424,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB51AD5020B2A97100E703D7 /* ControllerDefinitions.swift in Sources */,
 				EB51ACF320B2A61000E703D7 /* R_Name_STests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -426,6 +433,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB51AD5120B2A97100E703D7 /* ControllerDefinitions.swift in Sources */,
 				EB51ACFE20B2A61000E703D7 /* R_Name_SUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
