@@ -13,6 +13,36 @@
 		EB51ACE720B2A61000E703D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB51ACE520B2A61000E703D7 /* Main.storyboard */; };
 		EB51ACF320B2A61000E703D7 /* R_Name_STests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB51ACF220B2A61000E703D7 /* R_Name_STests.swift */; };
 		EB51ACFE20B2A61000E703D7 /* R_Name_SUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB51ACFD20B2A61000E703D7 /* R_Name_SUITests.swift */; };
+		EB51AD2B20B2A7C800E703D7 /* AppIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = EB51AD1120B2A7BE00E703D7 /* AppIcon.icns */; };
+		EB51AD2C20B2A7C800E703D7 /* FilesRenamer.m in Sources */ = {isa = PBXBuildFile; fileRef = EB51AD1220B2A7BE00E703D7 /* FilesRenamer.m */; };
+		EB51AD2D20B2A7C800E703D7 /* TransparentDraggedWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = EB51AD1320B2A7BE00E703D7 /* TransparentDraggedWindow.m */; };
+		EB51AD2E20B2A7C800E703D7 /* RNameController.h in Sources */ = {isa = PBXBuildFile; fileRef = EB51AD1420B2A7BE00E703D7 /* RNameController.h */; };
+		EB51AD2F20B2A7C800E703D7 /* Japanese.lproj in Resources */ = {isa = PBXBuildFile; fileRef = EB51AD1520B2A7BE00E703D7 /* Japanese.lproj */; };
+		EB51AD3020B2A7C800E703D7 /* RNameController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB51AD1620B2A7BE00E703D7 /* RNameController.m */; };
+		EB51AD3120B2A7C800E703D7 /* French.lproj in Resources */ = {isa = PBXBuildFile; fileRef = EB51AD1720B2A7BF00E703D7 /* French.lproj */; };
+		EB51AD3220B2A7C800E703D7 /* RenamedPathPair.m in Sources */ = {isa = PBXBuildFile; fileRef = EB51AD1820B2A7C000E703D7 /* RenamedPathPair.m */; };
+		EB51AD3320B2A7C800E703D7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EB51AD1920B2A7C100E703D7 /* main.m */; };
+		EB51AD3420B2A7C800E703D7 /* SequentialNumberChecker.h in Sources */ = {isa = PBXBuildFile; fileRef = EB51AD1A20B2A7C100E703D7 /* SequentialNumberChecker.h */; };
+		EB51AD3520B2A7C800E703D7 /* TransparentDraggedWindow.h in Sources */ = {isa = PBXBuildFile; fileRef = EB51AD1B20B2A7C100E703D7 /* TransparentDraggedWindow.h */; };
+		EB51AD3620B2A7C800E703D7 /* StringsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EB51AD1C20B2A7C100E703D7 /* StringsManager.m */; };
+		EB51AD3720B2A7C800E703D7 /* RenamedPathPairContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = EB51AD1D20B2A7C200E703D7 /* RenamedPathPairContainer.m */; };
+		EB51AD3820B2A7C800E703D7 /* German.lproj in Resources */ = {isa = PBXBuildFile; fileRef = EB51AD1E20B2A7C200E703D7 /* German.lproj */; };
+		EB51AD3920B2A7C800E703D7 /* English.lproj in Resources */ = {isa = PBXBuildFile; fileRef = EB51AD1F20B2A7C200E703D7 /* English.lproj */; };
+		EB51AD3A20B2A7C800E703D7 /* RenamedPathPairContainer.h in Sources */ = {isa = PBXBuildFile; fileRef = EB51AD2020B2A7C300E703D7 /* RenamedPathPairContainer.h */; };
+		EB51AD3B20B2A7C800E703D7 /* RenamedPathPair.h in Sources */ = {isa = PBXBuildFile; fileRef = EB51AD2120B2A7C300E703D7 /* RenamedPathPair.h */; };
+		EB51AD3C20B2A7C800E703D7 /* BetterCompareNSString.m in Sources */ = {isa = PBXBuildFile; fileRef = EB51AD2220B2A7C300E703D7 /* BetterCompareNSString.m */; };
+		EB51AD3D20B2A7C800E703D7 /* SequentialNumberChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = EB51AD2320B2A7C400E703D7 /* SequentialNumberChecker.m */; };
+		EB51AD3E20B2A7C800E703D7 /* ControllerDefinitions.h in Sources */ = {isa = PBXBuildFile; fileRef = EB51AD2420B2A7C500E703D7 /* ControllerDefinitions.h */; };
+		EB51AD3F20B2A7C800E703D7 /* PerlWrapper in Resources */ = {isa = PBXBuildFile; fileRef = EB51AD2520B2A7C500E703D7 /* PerlWrapper */; };
+		EB51AD4020B2A7C800E703D7 /* Definitions.h in Sources */ = {isa = PBXBuildFile; fileRef = EB51AD2620B2A7C500E703D7 /* Definitions.h */; };
+		EB51AD4120B2A7C800E703D7 /* Info-R_Name__Upgraded_.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB51AD2720B2A7C600E703D7 /* Info-R_Name__Upgraded_.plist */; };
+		EB51AD4220B2A7C800E703D7 /* BetterCompareNSString.h in Sources */ = {isa = PBXBuildFile; fileRef = EB51AD2820B2A7C600E703D7 /* BetterCompareNSString.h */; };
+		EB51AD4320B2A7C800E703D7 /* StringsManager.h in Sources */ = {isa = PBXBuildFile; fileRef = EB51AD2920B2A7C600E703D7 /* StringsManager.h */; };
+		EB51AD4420B2A7C800E703D7 /* FilesRenamer.h in Sources */ = {isa = PBXBuildFile; fileRef = EB51AD2A20B2A7C700E703D7 /* FilesRenamer.h */; };
+		EB51AD4720B2A89C00E703D7 /* Definitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB51AD4620B2A89C00E703D7 /* Definitions.swift */; };
+		EB51AD4B20B2A8AC00E703D7 /* R-Name-Bridging-Header.h in Sources */ = {isa = PBXBuildFile; fileRef = EB51AD4820B2A8AB00E703D7 /* R-Name-Bridging-Header.h */; };
+		EB51AD4C20B2A8AC00E703D7 /* R-NameTests-Bridging-Header.h in Sources */ = {isa = PBXBuildFile; fileRef = EB51AD4920B2A8AB00E703D7 /* R-NameTests-Bridging-Header.h */; };
+		EB51AD4D20B2A8AC00E703D7 /* R-NameUITests-Bridging-Header.h in Sources */ = {isa = PBXBuildFile; fileRef = EB51AD4A20B2A8AB00E703D7 /* R-NameUITests-Bridging-Header.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +76,37 @@
 		EB51ACF920B2A61000E703D7 /* R-Name SUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "R-Name SUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB51ACFD20B2A61000E703D7 /* R_Name_SUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = R_Name_SUITests.swift; sourceTree = "<group>"; };
 		EB51ACFF20B2A61000E703D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB51AD1020B2A7BD00E703D7 /* R-Name S-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.objj.h; path = "R-Name S-Bridging-Header.h"; sourceTree = "<group>"; };
+		EB51AD1120B2A7BE00E703D7 /* AppIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = AppIcon.icns; sourceTree = "<group>"; };
+		EB51AD1220B2A7BE00E703D7 /* FilesRenamer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilesRenamer.m; sourceTree = "<group>"; };
+		EB51AD1320B2A7BE00E703D7 /* TransparentDraggedWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransparentDraggedWindow.m; sourceTree = "<group>"; };
+		EB51AD1420B2A7BE00E703D7 /* RNameController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj.h; path = RNameController.h; sourceTree = "<group>"; };
+		EB51AD1520B2A7BE00E703D7 /* Japanese.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Japanese.lproj; sourceTree = "<group>"; };
+		EB51AD1620B2A7BE00E703D7 /* RNameController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNameController.m; sourceTree = "<group>"; };
+		EB51AD1720B2A7BF00E703D7 /* French.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = French.lproj; sourceTree = "<group>"; };
+		EB51AD1820B2A7C000E703D7 /* RenamedPathPair.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RenamedPathPair.m; sourceTree = "<group>"; };
+		EB51AD1920B2A7C100E703D7 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EB51AD1A20B2A7C100E703D7 /* SequentialNumberChecker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj.h; path = SequentialNumberChecker.h; sourceTree = "<group>"; };
+		EB51AD1B20B2A7C100E703D7 /* TransparentDraggedWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj.h; path = TransparentDraggedWindow.h; sourceTree = "<group>"; };
+		EB51AD1C20B2A7C100E703D7 /* StringsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringsManager.m; sourceTree = "<group>"; };
+		EB51AD1D20B2A7C200E703D7 /* RenamedPathPairContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RenamedPathPairContainer.m; sourceTree = "<group>"; };
+		EB51AD1E20B2A7C200E703D7 /* German.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = German.lproj; sourceTree = "<group>"; };
+		EB51AD1F20B2A7C200E703D7 /* English.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = English.lproj; sourceTree = "<group>"; };
+		EB51AD2020B2A7C300E703D7 /* RenamedPathPairContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj.h; path = RenamedPathPairContainer.h; sourceTree = "<group>"; };
+		EB51AD2120B2A7C300E703D7 /* RenamedPathPair.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj.h; path = RenamedPathPair.h; sourceTree = "<group>"; };
+		EB51AD2220B2A7C300E703D7 /* BetterCompareNSString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BetterCompareNSString.m; sourceTree = "<group>"; };
+		EB51AD2320B2A7C400E703D7 /* SequentialNumberChecker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SequentialNumberChecker.m; sourceTree = "<group>"; };
+		EB51AD2420B2A7C500E703D7 /* ControllerDefinitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj.h; path = ControllerDefinitions.h; sourceTree = "<group>"; };
+		EB51AD2520B2A7C500E703D7 /* PerlWrapper */ = {isa = PBXFileReference; lastKnownFileType = folder; path = PerlWrapper; sourceTree = "<group>"; };
+		EB51AD2620B2A7C500E703D7 /* Definitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj.h; path = Definitions.h; sourceTree = "<group>"; };
+		EB51AD2720B2A7C600E703D7 /* Info-R_Name__Upgraded_.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-R_Name__Upgraded_.plist"; sourceTree = "<group>"; };
+		EB51AD2820B2A7C600E703D7 /* BetterCompareNSString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj.h; path = BetterCompareNSString.h; sourceTree = "<group>"; };
+		EB51AD2920B2A7C600E703D7 /* StringsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj.h; path = StringsManager.h; sourceTree = "<group>"; };
+		EB51AD2A20B2A7C700E703D7 /* FilesRenamer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj.h; path = FilesRenamer.h; sourceTree = "<group>"; };
+		EB51AD4620B2A89C00E703D7 /* Definitions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Definitions.swift; sourceTree = "<group>"; };
+		EB51AD4820B2A8AB00E703D7 /* R-Name-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj.h; path = "R-Name-Bridging-Header.h"; sourceTree = "<group>"; };
+		EB51AD4920B2A8AB00E703D7 /* R-NameTests-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj.h; path = "R-NameTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		EB51AD4A20B2A8AB00E703D7 /* R-NameUITests-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj.h; path = "R-NameUITests-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,12 +157,16 @@
 		EB51ACDE20B2A60700E703D7 /* R-Name S */ = {
 			isa = PBXGroup;
 			children = (
+				EB51AD0B20B2A71600E703D7 /* Classes */,
+				EB51AD4520B2A84F00E703D7 /* Definitions */,
 				EB51ACDF20B2A60700E703D7 /* AppDelegate.swift */,
 				EB51ACE120B2A60700E703D7 /* ViewController.swift */,
 				EB51ACE320B2A61000E703D7 /* Assets.xcassets */,
 				EB51ACE520B2A61000E703D7 /* Main.storyboard */,
 				EB51ACE820B2A61000E703D7 /* Info.plist */,
 				EB51ACE920B2A61000E703D7 /* R_Name_S.entitlements */,
+				EB51AD0E20B2A75900E703D7 /* Bridging */,
+				EB51AD0F20B2A77100E703D7 /* Objective C */,
 			);
 			path = "R-Name S";
 			sourceTree = "<group>";
@@ -122,6 +187,65 @@
 				EB51ACFF20B2A61000E703D7 /* Info.plist */,
 			);
 			path = "R-Name SUITests";
+			sourceTree = "<group>";
+		};
+		EB51AD0B20B2A71600E703D7 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		EB51AD0E20B2A75900E703D7 /* Bridging */ = {
+			isa = PBXGroup;
+			children = (
+				EB51AD4820B2A8AB00E703D7 /* R-Name-Bridging-Header.h */,
+				EB51AD4920B2A8AB00E703D7 /* R-NameTests-Bridging-Header.h */,
+				EB51AD4A20B2A8AB00E703D7 /* R-NameUITests-Bridging-Header.h */,
+				EB51AD1020B2A7BD00E703D7 /* R-Name S-Bridging-Header.h */,
+			);
+			path = Bridging;
+			sourceTree = "<group>";
+		};
+		EB51AD0F20B2A77100E703D7 /* Objective C */ = {
+			isa = PBXGroup;
+			children = (
+				EB51AD2520B2A7C500E703D7 /* PerlWrapper */,
+				EB51AD2820B2A7C600E703D7 /* BetterCompareNSString.h */,
+				EB51AD2220B2A7C300E703D7 /* BetterCompareNSString.m */,
+				EB51AD2420B2A7C500E703D7 /* ControllerDefinitions.h */,
+				EB51AD2620B2A7C500E703D7 /* Definitions.h */,
+				EB51AD2A20B2A7C700E703D7 /* FilesRenamer.h */,
+				EB51AD1220B2A7BE00E703D7 /* FilesRenamer.m */,
+				EB51AD1920B2A7C100E703D7 /* main.m */,
+				EB51AD2120B2A7C300E703D7 /* RenamedPathPair.h */,
+				EB51AD1820B2A7C000E703D7 /* RenamedPathPair.m */,
+				EB51AD2020B2A7C300E703D7 /* RenamedPathPairContainer.h */,
+				EB51AD1D20B2A7C200E703D7 /* RenamedPathPairContainer.m */,
+				EB51AD1420B2A7BE00E703D7 /* RNameController.h */,
+				EB51AD1620B2A7BE00E703D7 /* RNameController.m */,
+				EB51AD1A20B2A7C100E703D7 /* SequentialNumberChecker.h */,
+				EB51AD2320B2A7C400E703D7 /* SequentialNumberChecker.m */,
+				EB51AD2920B2A7C600E703D7 /* StringsManager.h */,
+				EB51AD1C20B2A7C100E703D7 /* StringsManager.m */,
+				EB51AD1B20B2A7C100E703D7 /* TransparentDraggedWindow.h */,
+				EB51AD1320B2A7BE00E703D7 /* TransparentDraggedWindow.m */,
+				EB51AD2720B2A7C600E703D7 /* Info-R_Name__Upgraded_.plist */,
+				EB51AD1120B2A7BE00E703D7 /* AppIcon.icns */,
+				EB51AD1F20B2A7C200E703D7 /* English.lproj */,
+				EB51AD1720B2A7BF00E703D7 /* French.lproj */,
+				EB51AD1E20B2A7C200E703D7 /* German.lproj */,
+				EB51AD1520B2A7BE00E703D7 /* Japanese.lproj */,
+			);
+			path = "Objective C";
+			sourceTree = "<group>";
+		};
+		EB51AD4520B2A84F00E703D7 /* Definitions */ = {
+			isa = PBXGroup;
+			children = (
+				EB51AD4620B2A89C00E703D7 /* Definitions.swift */,
+			);
+			path = Definitions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,6 +316,7 @@
 				TargetAttributes = {
 					EB51ACDB20B2A60700E703D7 = {
 						CreatedOnToolsVersion = 9.3.1;
+						LastSwiftMigration = 0930;
 					};
 					EB51ACED20B2A61000E703D7 = {
 						CreatedOnToolsVersion = 9.3.1;
@@ -228,8 +353,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB51AD4120B2A7C800E703D7 /* Info-R_Name__Upgraded_.plist in Resources */,
 				EB51ACE420B2A61000E703D7 /* Assets.xcassets in Resources */,
+				EB51AD3920B2A7C800E703D7 /* English.lproj in Resources */,
+				EB51AD3820B2A7C800E703D7 /* German.lproj in Resources */,
 				EB51ACE720B2A61000E703D7 /* Main.storyboard in Resources */,
+				EB51AD3120B2A7C800E703D7 /* French.lproj in Resources */,
+				EB51AD2F20B2A7C800E703D7 /* Japanese.lproj in Resources */,
+				EB51AD2B20B2A7C800E703D7 /* AppIcon.icns in Resources */,
+				EB51AD3F20B2A7C800E703D7 /* PerlWrapper in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,8 +386,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB51AD3C20B2A7C800E703D7 /* BetterCompareNSString.m in Sources */,
 				EB51ACE220B2A60700E703D7 /* ViewController.swift in Sources */,
+				EB51AD3220B2A7C800E703D7 /* RenamedPathPair.m in Sources */,
+				EB51AD4220B2A7C800E703D7 /* BetterCompareNSString.h in Sources */,
+				EB51AD4720B2A89C00E703D7 /* Definitions.swift in Sources */,
+				EB51AD4D20B2A8AC00E703D7 /* R-NameUITests-Bridging-Header.h in Sources */,
+				EB51AD3420B2A7C800E703D7 /* SequentialNumberChecker.h in Sources */,
+				EB51AD2E20B2A7C800E703D7 /* RNameController.h in Sources */,
+				EB51AD3B20B2A7C800E703D7 /* RenamedPathPair.h in Sources */,
+				EB51AD2D20B2A7C800E703D7 /* TransparentDraggedWindow.m in Sources */,
+				EB51AD3E20B2A7C800E703D7 /* ControllerDefinitions.h in Sources */,
+				EB51AD2C20B2A7C800E703D7 /* FilesRenamer.m in Sources */,
+				EB51AD3A20B2A7C800E703D7 /* RenamedPathPairContainer.h in Sources */,
+				EB51AD4320B2A7C800E703D7 /* StringsManager.h in Sources */,
+				EB51AD4420B2A7C800E703D7 /* FilesRenamer.h in Sources */,
+				EB51AD3520B2A7C800E703D7 /* TransparentDraggedWindow.h in Sources */,
+				EB51AD4B20B2A8AC00E703D7 /* R-Name-Bridging-Header.h in Sources */,
 				EB51ACE020B2A60700E703D7 /* AppDelegate.swift in Sources */,
+				EB51AD3320B2A7C800E703D7 /* main.m in Sources */,
+				EB51AD3720B2A7C800E703D7 /* RenamedPathPairContainer.m in Sources */,
+				EB51AD3D20B2A7C800E703D7 /* SequentialNumberChecker.m in Sources */,
+				EB51AD4020B2A7C800E703D7 /* Definitions.h in Sources */,
+				EB51AD3020B2A7C800E703D7 /* RNameController.m in Sources */,
+				EB51AD3620B2A7C800E703D7 /* StringsManager.m in Sources */,
+				EB51AD4C20B2A8AC00E703D7 /* R-NameTests-Bridging-Header.h in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +574,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "R-Name S/R_Name_S.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -430,6 +586,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "au.net.p2made.R-Name-S";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "R-Name S/Objective C/R-Name S-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -438,6 +596,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "R-Name S/R_Name_S.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -449,6 +608,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "au.net.p2made.R-Name-S";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "R-Name S/Objective C/R-Name S-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
