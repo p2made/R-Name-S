@@ -7,128 +7,63 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EB51ACE020B2A60700E703D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB51ACDF20B2A60700E703D7 /* AppDelegate.swift */; };
-		EB51ACE220B2A60700E703D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB51ACE120B2A60700E703D7 /* ViewController.swift */; };
-		EB51ACE420B2A61000E703D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB51ACE320B2A61000E703D7 /* Assets.xcassets */; };
-		EB51ACE720B2A61000E703D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB51ACE520B2A61000E703D7 /* Main.storyboard */; };
-		EB51ACF320B2A61000E703D7 /* R_Name_STests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB51ACF220B2A61000E703D7 /* R_Name_STests.swift */; };
-		EB51ACFE20B2A61000E703D7 /* R_Name_SUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB51ACFD20B2A61000E703D7 /* R_Name_SUITests.swift */; };
-		EB51AD2B20B2A7C800E703D7 /* AppIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = EB51AD1120B2A7BE00E703D7 /* AppIcon.icns */; };
-		EB51AD2C20B2A7C800E703D7 /* FilesRenamer.m in Sources */ = {isa = PBXBuildFile; fileRef = EB51AD1220B2A7BE00E703D7 /* FilesRenamer.m */; };
-		EB51AD2D20B2A7C800E703D7 /* TransparentDraggedWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = EB51AD1320B2A7BE00E703D7 /* TransparentDraggedWindow.m */; };
-		EB51AD2E20B2A7C800E703D7 /* RNameController.h in Sources */ = {isa = PBXBuildFile; fileRef = EB51AD1420B2A7BE00E703D7 /* RNameController.h */; };
-		EB51AD2F20B2A7C800E703D7 /* Japanese.lproj in Resources */ = {isa = PBXBuildFile; fileRef = EB51AD1520B2A7BE00E703D7 /* Japanese.lproj */; };
-		EB51AD3020B2A7C800E703D7 /* RNameController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB51AD1620B2A7BE00E703D7 /* RNameController.m */; };
-		EB51AD3120B2A7C800E703D7 /* French.lproj in Resources */ = {isa = PBXBuildFile; fileRef = EB51AD1720B2A7BF00E703D7 /* French.lproj */; };
-		EB51AD3220B2A7C800E703D7 /* RenamedPathPair.m in Sources */ = {isa = PBXBuildFile; fileRef = EB51AD1820B2A7C000E703D7 /* RenamedPathPair.m */; };
-		EB51AD3320B2A7C800E703D7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EB51AD1920B2A7C100E703D7 /* main.m */; };
-		EB51AD3420B2A7C800E703D7 /* SequentialNumberChecker.h in Sources */ = {isa = PBXBuildFile; fileRef = EB51AD1A20B2A7C100E703D7 /* SequentialNumberChecker.h */; };
-		EB51AD3520B2A7C800E703D7 /* TransparentDraggedWindow.h in Sources */ = {isa = PBXBuildFile; fileRef = EB51AD1B20B2A7C100E703D7 /* TransparentDraggedWindow.h */; };
-		EB51AD3620B2A7C800E703D7 /* StringsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EB51AD1C20B2A7C100E703D7 /* StringsManager.m */; };
-		EB51AD3720B2A7C800E703D7 /* RenamedPathPairContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = EB51AD1D20B2A7C200E703D7 /* RenamedPathPairContainer.m */; };
-		EB51AD3820B2A7C800E703D7 /* German.lproj in Resources */ = {isa = PBXBuildFile; fileRef = EB51AD1E20B2A7C200E703D7 /* German.lproj */; };
-		EB51AD3920B2A7C800E703D7 /* English.lproj in Resources */ = {isa = PBXBuildFile; fileRef = EB51AD1F20B2A7C200E703D7 /* English.lproj */; };
-		EB51AD3A20B2A7C800E703D7 /* RenamedPathPairContainer.h in Sources */ = {isa = PBXBuildFile; fileRef = EB51AD2020B2A7C300E703D7 /* RenamedPathPairContainer.h */; };
-		EB51AD3B20B2A7C800E703D7 /* RenamedPathPair.h in Sources */ = {isa = PBXBuildFile; fileRef = EB51AD2120B2A7C300E703D7 /* RenamedPathPair.h */; };
-		EB51AD3C20B2A7C800E703D7 /* BetterCompareNSString.m in Sources */ = {isa = PBXBuildFile; fileRef = EB51AD2220B2A7C300E703D7 /* BetterCompareNSString.m */; };
-		EB51AD3D20B2A7C800E703D7 /* SequentialNumberChecker.m in Sources */ = {isa = PBXBuildFile; fileRef = EB51AD2320B2A7C400E703D7 /* SequentialNumberChecker.m */; };
-		EB51AD3E20B2A7C800E703D7 /* ControllerDefinitions.h in Sources */ = {isa = PBXBuildFile; fileRef = EB51AD2420B2A7C500E703D7 /* ControllerDefinitions.h */; };
-		EB51AD3F20B2A7C800E703D7 /* PerlWrapper in Resources */ = {isa = PBXBuildFile; fileRef = EB51AD2520B2A7C500E703D7 /* PerlWrapper */; };
-		EB51AD4020B2A7C800E703D7 /* Definitions.h in Sources */ = {isa = PBXBuildFile; fileRef = EB51AD2620B2A7C500E703D7 /* Definitions.h */; };
-		EB51AD4120B2A7C800E703D7 /* Info-R_Name__Upgraded_.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB51AD2720B2A7C600E703D7 /* Info-R_Name__Upgraded_.plist */; };
-		EB51AD4220B2A7C800E703D7 /* BetterCompareNSString.h in Sources */ = {isa = PBXBuildFile; fileRef = EB51AD2820B2A7C600E703D7 /* BetterCompareNSString.h */; };
-		EB51AD4320B2A7C800E703D7 /* StringsManager.h in Sources */ = {isa = PBXBuildFile; fileRef = EB51AD2920B2A7C600E703D7 /* StringsManager.h */; };
-		EB51AD4420B2A7C800E703D7 /* FilesRenamer.h in Sources */ = {isa = PBXBuildFile; fileRef = EB51AD2A20B2A7C700E703D7 /* FilesRenamer.h */; };
-		EB51AD4720B2A89C00E703D7 /* Definitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB51AD4620B2A89C00E703D7 /* Definitions.swift */; };
-		EB51AD4B20B2A8AC00E703D7 /* R-Name-Bridging-Header.h in Sources */ = {isa = PBXBuildFile; fileRef = EB51AD4820B2A8AB00E703D7 /* R-Name-Bridging-Header.h */; };
-		EB51AD4C20B2A8AC00E703D7 /* R-NameTests-Bridging-Header.h in Sources */ = {isa = PBXBuildFile; fileRef = EB51AD4920B2A8AB00E703D7 /* R-NameTests-Bridging-Header.h */; };
-		EB51AD4D20B2A8AC00E703D7 /* R-NameUITests-Bridging-Header.h in Sources */ = {isa = PBXBuildFile; fileRef = EB51AD4A20B2A8AB00E703D7 /* R-NameUITests-Bridging-Header.h */; };
-		EB51AD4F20B2A97100E703D7 /* ControllerDefinitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB51AD4E20B2A97100E703D7 /* ControllerDefinitions.swift */; };
-		EB51AD5020B2A97100E703D7 /* ControllerDefinitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB51AD4E20B2A97100E703D7 /* ControllerDefinitions.swift */; };
-		EB51AD5120B2A97100E703D7 /* ControllerDefinitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB51AD4E20B2A97100E703D7 /* ControllerDefinitions.swift */; };
+		EB9C9E4021312AC0003FD0EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9C9E3F21312AC0003FD0EC /* AppDelegate.swift */; };
+		EB9C9E4221312AC0003FD0EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9C9E4121312AC0003FD0EC /* ViewController.swift */; };
+		EB9C9E4421312AC4003FD0EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB9C9E4321312AC4003FD0EC /* Assets.xcassets */; };
+		EB9C9E4721312AC4003FD0EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB9C9E4521312AC4003FD0EC /* Main.storyboard */; };
+		EB9C9E5321312AC4003FD0EC /* R_Name_STests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9C9E5221312AC4003FD0EC /* R_Name_STests.swift */; };
+		EB9C9E5E21312AC4003FD0EC /* R_Name_SUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9C9E5D21312AC4003FD0EC /* R_Name_SUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		EB51ACEF20B2A61000E703D7 /* PBXContainerItemProxy */ = {
+		EB9C9E4F21312AC4003FD0EC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = EB51ACD420B2A60700E703D7 /* Project object */;
+			containerPortal = EB9C9E3421312AC0003FD0EC /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = EB51ACDB20B2A60700E703D7;
+			remoteGlobalIDString = EB9C9E3B21312AC0003FD0EC;
 			remoteInfo = "R-Name S";
 		};
-		EB51ACFA20B2A61000E703D7 /* PBXContainerItemProxy */ = {
+		EB9C9E5A21312AC4003FD0EC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = EB51ACD420B2A60700E703D7 /* Project object */;
+			containerPortal = EB9C9E3421312AC0003FD0EC /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = EB51ACDB20B2A60700E703D7;
+			remoteGlobalIDString = EB9C9E3B21312AC0003FD0EC;
 			remoteInfo = "R-Name S";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		EB51ACDC20B2A60700E703D7 /* R-Name S.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "R-Name S.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EB51ACDF20B2A60700E703D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EB51ACE120B2A60700E703D7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EB51ACE320B2A61000E703D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		EB51ACE620B2A61000E703D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		EB51ACE820B2A61000E703D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EB51ACE920B2A61000E703D7 /* R_Name_S.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = R_Name_S.entitlements; sourceTree = "<group>"; };
-		EB51ACEE20B2A61000E703D7 /* R-Name STests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "R-Name STests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EB51ACF220B2A61000E703D7 /* R_Name_STests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = R_Name_STests.swift; sourceTree = "<group>"; };
-		EB51ACF420B2A61000E703D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EB51ACF920B2A61000E703D7 /* R-Name SUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "R-Name SUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EB51ACFD20B2A61000E703D7 /* R_Name_SUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = R_Name_SUITests.swift; sourceTree = "<group>"; };
-		EB51ACFF20B2A61000E703D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EB51AD1020B2A7BD00E703D7 /* R-Name S-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.objj.h; path = "R-Name S-Bridging-Header.h"; sourceTree = "<group>"; };
-		EB51AD1120B2A7BE00E703D7 /* AppIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = AppIcon.icns; sourceTree = "<group>"; };
-		EB51AD1220B2A7BE00E703D7 /* FilesRenamer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilesRenamer.m; sourceTree = "<group>"; };
-		EB51AD1320B2A7BE00E703D7 /* TransparentDraggedWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransparentDraggedWindow.m; sourceTree = "<group>"; };
-		EB51AD1420B2A7BE00E703D7 /* RNameController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj.h; path = RNameController.h; sourceTree = "<group>"; };
-		EB51AD1520B2A7BE00E703D7 /* Japanese.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Japanese.lproj; sourceTree = "<group>"; };
-		EB51AD1620B2A7BE00E703D7 /* RNameController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNameController.m; sourceTree = "<group>"; };
-		EB51AD1720B2A7BF00E703D7 /* French.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = French.lproj; sourceTree = "<group>"; };
-		EB51AD1820B2A7C000E703D7 /* RenamedPathPair.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RenamedPathPair.m; sourceTree = "<group>"; };
-		EB51AD1920B2A7C100E703D7 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		EB51AD1A20B2A7C100E703D7 /* SequentialNumberChecker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj.h; path = SequentialNumberChecker.h; sourceTree = "<group>"; };
-		EB51AD1B20B2A7C100E703D7 /* TransparentDraggedWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj.h; path = TransparentDraggedWindow.h; sourceTree = "<group>"; };
-		EB51AD1C20B2A7C100E703D7 /* StringsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringsManager.m; sourceTree = "<group>"; };
-		EB51AD1D20B2A7C200E703D7 /* RenamedPathPairContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RenamedPathPairContainer.m; sourceTree = "<group>"; };
-		EB51AD1E20B2A7C200E703D7 /* German.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = German.lproj; sourceTree = "<group>"; };
-		EB51AD1F20B2A7C200E703D7 /* English.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = English.lproj; sourceTree = "<group>"; };
-		EB51AD2020B2A7C300E703D7 /* RenamedPathPairContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj.h; path = RenamedPathPairContainer.h; sourceTree = "<group>"; };
-		EB51AD2120B2A7C300E703D7 /* RenamedPathPair.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj.h; path = RenamedPathPair.h; sourceTree = "<group>"; };
-		EB51AD2220B2A7C300E703D7 /* BetterCompareNSString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BetterCompareNSString.m; sourceTree = "<group>"; };
-		EB51AD2320B2A7C400E703D7 /* SequentialNumberChecker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SequentialNumberChecker.m; sourceTree = "<group>"; };
-		EB51AD2420B2A7C500E703D7 /* ControllerDefinitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj.h; path = ControllerDefinitions.h; sourceTree = "<group>"; };
-		EB51AD2520B2A7C500E703D7 /* PerlWrapper */ = {isa = PBXFileReference; lastKnownFileType = folder; path = PerlWrapper; sourceTree = "<group>"; };
-		EB51AD2620B2A7C500E703D7 /* Definitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj.h; path = Definitions.h; sourceTree = "<group>"; };
-		EB51AD2720B2A7C600E703D7 /* Info-R_Name__Upgraded_.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-R_Name__Upgraded_.plist"; sourceTree = "<group>"; };
-		EB51AD2820B2A7C600E703D7 /* BetterCompareNSString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj.h; path = BetterCompareNSString.h; sourceTree = "<group>"; };
-		EB51AD2920B2A7C600E703D7 /* StringsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj.h; path = StringsManager.h; sourceTree = "<group>"; };
-		EB51AD2A20B2A7C700E703D7 /* FilesRenamer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj.h; path = FilesRenamer.h; sourceTree = "<group>"; };
-		EB51AD4620B2A89C00E703D7 /* Definitions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Definitions.swift; sourceTree = "<group>"; };
-		EB51AD4820B2A8AB00E703D7 /* R-Name-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj.h; path = "R-Name-Bridging-Header.h"; sourceTree = "<group>"; };
-		EB51AD4920B2A8AB00E703D7 /* R-NameTests-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj.h; path = "R-NameTests-Bridging-Header.h"; sourceTree = "<group>"; };
-		EB51AD4A20B2A8AB00E703D7 /* R-NameUITests-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.objj.h; path = "R-NameUITests-Bridging-Header.h"; sourceTree = "<group>"; };
-		EB51AD4E20B2A97100E703D7 /* ControllerDefinitions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerDefinitions.swift; sourceTree = "<group>"; };
+		EB9C9E3C21312AC0003FD0EC /* R-Name S.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "R-Name S.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB9C9E3F21312AC0003FD0EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EB9C9E4121312AC0003FD0EC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EB9C9E4321312AC4003FD0EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EB9C9E4621312AC4003FD0EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EB9C9E4821312AC4003FD0EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB9C9E4921312AC4003FD0EC /* R_Name_S.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = R_Name_S.entitlements; sourceTree = "<group>"; };
+		EB9C9E4E21312AC4003FD0EC /* R-Name STests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "R-Name STests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB9C9E5221312AC4003FD0EC /* R_Name_STests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = R_Name_STests.swift; sourceTree = "<group>"; };
+		EB9C9E5421312AC4003FD0EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB9C9E5921312AC4003FD0EC /* R-Name SUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "R-Name SUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB9C9E5D21312AC4003FD0EC /* R_Name_SUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = R_Name_SUITests.swift; sourceTree = "<group>"; };
+		EB9C9E5F21312AC4003FD0EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		EB51ACD920B2A60700E703D7 /* Frameworks */ = {
+		EB9C9E3921312AC0003FD0EC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EB51ACEB20B2A61000E703D7 /* Frameworks */ = {
+		EB9C9E4B21312AC4003FD0EC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EB51ACF620B2A61000E703D7 /* Frameworks */ = {
+		EB9C9E5621312AC4003FD0EC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -138,131 +73,67 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		EB51ACD320B2A60700E703D7 = {
+		EB9C9E3321312AC0003FD0EC = {
 			isa = PBXGroup;
 			children = (
-				EB51ACDE20B2A60700E703D7 /* R-Name S */,
-				EB51ACF120B2A61000E703D7 /* R-Name STests */,
-				EB51ACFC20B2A61000E703D7 /* R-Name SUITests */,
-				EB51ACDD20B2A60700E703D7 /* Products */,
+				EB9C9E3E21312AC0003FD0EC /* R-Name S */,
+				EB9C9E5121312AC4003FD0EC /* R-Name STests */,
+				EB9C9E5C21312AC4003FD0EC /* R-Name SUITests */,
+				EB9C9E3D21312AC0003FD0EC /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		EB51ACDD20B2A60700E703D7 /* Products */ = {
+		EB9C9E3D21312AC0003FD0EC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EB51ACDC20B2A60700E703D7 /* R-Name S.app */,
-				EB51ACEE20B2A61000E703D7 /* R-Name STests.xctest */,
-				EB51ACF920B2A61000E703D7 /* R-Name SUITests.xctest */,
+				EB9C9E3C21312AC0003FD0EC /* R-Name S.app */,
+				EB9C9E4E21312AC4003FD0EC /* R-Name STests.xctest */,
+				EB9C9E5921312AC4003FD0EC /* R-Name SUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		EB51ACDE20B2A60700E703D7 /* R-Name S */ = {
+		EB9C9E3E21312AC0003FD0EC /* R-Name S */ = {
 			isa = PBXGroup;
 			children = (
-				EB51AD0B20B2A71600E703D7 /* Classes */,
-				EB51AD4520B2A84F00E703D7 /* Definitions */,
-				EB51ACDF20B2A60700E703D7 /* AppDelegate.swift */,
-				EB51ACE120B2A60700E703D7 /* ViewController.swift */,
-				EB51ACE320B2A61000E703D7 /* Assets.xcassets */,
-				EB51ACE520B2A61000E703D7 /* Main.storyboard */,
-				EB51ACE820B2A61000E703D7 /* Info.plist */,
-				EB51ACE920B2A61000E703D7 /* R_Name_S.entitlements */,
-				EB51AD0E20B2A75900E703D7 /* Bridging */,
-				EB51AD0F20B2A77100E703D7 /* Objective C */,
+				EB9C9E3F21312AC0003FD0EC /* AppDelegate.swift */,
+				EB9C9E4121312AC0003FD0EC /* ViewController.swift */,
+				EB9C9E4321312AC4003FD0EC /* Assets.xcassets */,
+				EB9C9E4521312AC4003FD0EC /* Main.storyboard */,
+				EB9C9E4821312AC4003FD0EC /* Info.plist */,
+				EB9C9E4921312AC4003FD0EC /* R_Name_S.entitlements */,
 			);
 			path = "R-Name S";
 			sourceTree = "<group>";
 		};
-		EB51ACF120B2A61000E703D7 /* R-Name STests */ = {
+		EB9C9E5121312AC4003FD0EC /* R-Name STests */ = {
 			isa = PBXGroup;
 			children = (
-				EB51ACF220B2A61000E703D7 /* R_Name_STests.swift */,
-				EB51ACF420B2A61000E703D7 /* Info.plist */,
+				EB9C9E5221312AC4003FD0EC /* R_Name_STests.swift */,
+				EB9C9E5421312AC4003FD0EC /* Info.plist */,
 			);
 			path = "R-Name STests";
 			sourceTree = "<group>";
 		};
-		EB51ACFC20B2A61000E703D7 /* R-Name SUITests */ = {
+		EB9C9E5C21312AC4003FD0EC /* R-Name SUITests */ = {
 			isa = PBXGroup;
 			children = (
-				EB51ACFD20B2A61000E703D7 /* R_Name_SUITests.swift */,
-				EB51ACFF20B2A61000E703D7 /* Info.plist */,
+				EB9C9E5D21312AC4003FD0EC /* R_Name_SUITests.swift */,
+				EB9C9E5F21312AC4003FD0EC /* Info.plist */,
 			);
 			path = "R-Name SUITests";
-			sourceTree = "<group>";
-		};
-		EB51AD0B20B2A71600E703D7 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		EB51AD0E20B2A75900E703D7 /* Bridging */ = {
-			isa = PBXGroup;
-			children = (
-				EB51AD4820B2A8AB00E703D7 /* R-Name-Bridging-Header.h */,
-				EB51AD4920B2A8AB00E703D7 /* R-NameTests-Bridging-Header.h */,
-				EB51AD4A20B2A8AB00E703D7 /* R-NameUITests-Bridging-Header.h */,
-				EB51AD1020B2A7BD00E703D7 /* R-Name S-Bridging-Header.h */,
-			);
-			path = Bridging;
-			sourceTree = "<group>";
-		};
-		EB51AD0F20B2A77100E703D7 /* Objective C */ = {
-			isa = PBXGroup;
-			children = (
-				EB51AD2520B2A7C500E703D7 /* PerlWrapper */,
-				EB51AD2820B2A7C600E703D7 /* BetterCompareNSString.h */,
-				EB51AD2220B2A7C300E703D7 /* BetterCompareNSString.m */,
-				EB51AD2420B2A7C500E703D7 /* ControllerDefinitions.h */,
-				EB51AD2620B2A7C500E703D7 /* Definitions.h */,
-				EB51AD2A20B2A7C700E703D7 /* FilesRenamer.h */,
-				EB51AD1220B2A7BE00E703D7 /* FilesRenamer.m */,
-				EB51AD1920B2A7C100E703D7 /* main.m */,
-				EB51AD2120B2A7C300E703D7 /* RenamedPathPair.h */,
-				EB51AD1820B2A7C000E703D7 /* RenamedPathPair.m */,
-				EB51AD2020B2A7C300E703D7 /* RenamedPathPairContainer.h */,
-				EB51AD1D20B2A7C200E703D7 /* RenamedPathPairContainer.m */,
-				EB51AD1420B2A7BE00E703D7 /* RNameController.h */,
-				EB51AD1620B2A7BE00E703D7 /* RNameController.m */,
-				EB51AD1A20B2A7C100E703D7 /* SequentialNumberChecker.h */,
-				EB51AD2320B2A7C400E703D7 /* SequentialNumberChecker.m */,
-				EB51AD2920B2A7C600E703D7 /* StringsManager.h */,
-				EB51AD1C20B2A7C100E703D7 /* StringsManager.m */,
-				EB51AD1B20B2A7C100E703D7 /* TransparentDraggedWindow.h */,
-				EB51AD1320B2A7BE00E703D7 /* TransparentDraggedWindow.m */,
-				EB51AD2720B2A7C600E703D7 /* Info-R_Name__Upgraded_.plist */,
-				EB51AD1120B2A7BE00E703D7 /* AppIcon.icns */,
-				EB51AD1F20B2A7C200E703D7 /* English.lproj */,
-				EB51AD1720B2A7BF00E703D7 /* French.lproj */,
-				EB51AD1E20B2A7C200E703D7 /* German.lproj */,
-				EB51AD1520B2A7BE00E703D7 /* Japanese.lproj */,
-			);
-			path = "Objective C";
-			sourceTree = "<group>";
-		};
-		EB51AD4520B2A84F00E703D7 /* Definitions */ = {
-			isa = PBXGroup;
-			children = (
-				EB51AD4E20B2A97100E703D7 /* ControllerDefinitions.swift */,
-				EB51AD4620B2A89C00E703D7 /* Definitions.swift */,
-			);
-			path = Definitions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		EB51ACDB20B2A60700E703D7 /* R-Name S */ = {
+		EB9C9E3B21312AC0003FD0EC /* R-Name S */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EB51AD0220B2A61000E703D7 /* Build configuration list for PBXNativeTarget "R-Name S" */;
+			buildConfigurationList = EB9C9E6221312AC4003FD0EC /* Build configuration list for PBXNativeTarget "R-Name S" */;
 			buildPhases = (
-				EB51ACD820B2A60700E703D7 /* Sources */,
-				EB51ACD920B2A60700E703D7 /* Frameworks */,
-				EB51ACDA20B2A60700E703D7 /* Resources */,
+				EB9C9E3821312AC0003FD0EC /* Sources */,
+				EB9C9E3921312AC0003FD0EC /* Frameworks */,
+				EB9C9E3A21312AC0003FD0EC /* Resources */,
 			);
 			buildRules = (
 			);
@@ -270,70 +141,69 @@
 			);
 			name = "R-Name S";
 			productName = "R-Name S";
-			productReference = EB51ACDC20B2A60700E703D7 /* R-Name S.app */;
+			productReference = EB9C9E3C21312AC0003FD0EC /* R-Name S.app */;
 			productType = "com.apple.product-type.application";
 		};
-		EB51ACED20B2A61000E703D7 /* R-Name STests */ = {
+		EB9C9E4D21312AC4003FD0EC /* R-Name STests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EB51AD0520B2A61000E703D7 /* Build configuration list for PBXNativeTarget "R-Name STests" */;
+			buildConfigurationList = EB9C9E6521312AC4003FD0EC /* Build configuration list for PBXNativeTarget "R-Name STests" */;
 			buildPhases = (
-				EB51ACEA20B2A61000E703D7 /* Sources */,
-				EB51ACEB20B2A61000E703D7 /* Frameworks */,
-				EB51ACEC20B2A61000E703D7 /* Resources */,
+				EB9C9E4A21312AC4003FD0EC /* Sources */,
+				EB9C9E4B21312AC4003FD0EC /* Frameworks */,
+				EB9C9E4C21312AC4003FD0EC /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				EB51ACF020B2A61000E703D7 /* PBXTargetDependency */,
+				EB9C9E5021312AC4003FD0EC /* PBXTargetDependency */,
 			);
 			name = "R-Name STests";
 			productName = "R-Name STests";
-			productReference = EB51ACEE20B2A61000E703D7 /* R-Name STests.xctest */;
+			productReference = EB9C9E4E21312AC4003FD0EC /* R-Name STests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		EB51ACF820B2A61000E703D7 /* R-Name SUITests */ = {
+		EB9C9E5821312AC4003FD0EC /* R-Name SUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EB51AD0820B2A61000E703D7 /* Build configuration list for PBXNativeTarget "R-Name SUITests" */;
+			buildConfigurationList = EB9C9E6821312AC4003FD0EC /* Build configuration list for PBXNativeTarget "R-Name SUITests" */;
 			buildPhases = (
-				EB51ACF520B2A61000E703D7 /* Sources */,
-				EB51ACF620B2A61000E703D7 /* Frameworks */,
-				EB51ACF720B2A61000E703D7 /* Resources */,
+				EB9C9E5521312AC4003FD0EC /* Sources */,
+				EB9C9E5621312AC4003FD0EC /* Frameworks */,
+				EB9C9E5721312AC4003FD0EC /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				EB51ACFB20B2A61000E703D7 /* PBXTargetDependency */,
+				EB9C9E5B21312AC4003FD0EC /* PBXTargetDependency */,
 			);
 			name = "R-Name SUITests";
 			productName = "R-Name SUITests";
-			productReference = EB51ACF920B2A61000E703D7 /* R-Name SUITests.xctest */;
+			productReference = EB9C9E5921312AC4003FD0EC /* R-Name SUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		EB51ACD420B2A60700E703D7 /* Project object */ = {
+		EB9C9E3421312AC0003FD0EC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 0930;
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = p2made;
 				TargetAttributes = {
-					EB51ACDB20B2A60700E703D7 = {
-						CreatedOnToolsVersion = 9.3.1;
-						LastSwiftMigration = 0930;
+					EB9C9E3B21312AC0003FD0EC = {
+						CreatedOnToolsVersion = 10.0;
 					};
-					EB51ACED20B2A61000E703D7 = {
-						CreatedOnToolsVersion = 9.3.1;
-						TestTargetID = EB51ACDB20B2A60700E703D7;
+					EB9C9E4D21312AC4003FD0EC = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = EB9C9E3B21312AC0003FD0EC;
 					};
-					EB51ACF820B2A61000E703D7 = {
-						CreatedOnToolsVersion = 9.3.1;
-						TestTargetID = EB51ACDB20B2A60700E703D7;
+					EB9C9E5821312AC4003FD0EC = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = EB9C9E3B21312AC0003FD0EC;
 					};
 				};
 			};
-			buildConfigurationList = EB51ACD720B2A60700E703D7 /* Build configuration list for PBXProject "R-Name S" */;
+			buildConfigurationList = EB9C9E3721312AC0003FD0EC /* Build configuration list for PBXProject "R-Name S" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -341,43 +211,36 @@
 				en,
 				Base,
 			);
-			mainGroup = EB51ACD320B2A60700E703D7;
-			productRefGroup = EB51ACDD20B2A60700E703D7 /* Products */;
+			mainGroup = EB9C9E3321312AC0003FD0EC;
+			productRefGroup = EB9C9E3D21312AC0003FD0EC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EB51ACDB20B2A60700E703D7 /* R-Name S */,
-				EB51ACED20B2A61000E703D7 /* R-Name STests */,
-				EB51ACF820B2A61000E703D7 /* R-Name SUITests */,
+				EB9C9E3B21312AC0003FD0EC /* R-Name S */,
+				EB9C9E4D21312AC4003FD0EC /* R-Name STests */,
+				EB9C9E5821312AC4003FD0EC /* R-Name SUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		EB51ACDA20B2A60700E703D7 /* Resources */ = {
+		EB9C9E3A21312AC0003FD0EC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB51AD4120B2A7C800E703D7 /* Info-R_Name__Upgraded_.plist in Resources */,
-				EB51ACE420B2A61000E703D7 /* Assets.xcassets in Resources */,
-				EB51AD3920B2A7C800E703D7 /* English.lproj in Resources */,
-				EB51AD3820B2A7C800E703D7 /* German.lproj in Resources */,
-				EB51ACE720B2A61000E703D7 /* Main.storyboard in Resources */,
-				EB51AD3120B2A7C800E703D7 /* French.lproj in Resources */,
-				EB51AD2F20B2A7C800E703D7 /* Japanese.lproj in Resources */,
-				EB51AD2B20B2A7C800E703D7 /* AppIcon.icns in Resources */,
-				EB51AD3F20B2A7C800E703D7 /* PerlWrapper in Resources */,
+				EB9C9E4421312AC4003FD0EC /* Assets.xcassets in Resources */,
+				EB9C9E4721312AC4003FD0EC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EB51ACEC20B2A61000E703D7 /* Resources */ = {
+		EB9C9E4C21312AC4003FD0EC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EB51ACF720B2A61000E703D7 /* Resources */ = {
+		EB9C9E5721312AC4003FD0EC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -387,77 +250,51 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		EB51ACD820B2A60700E703D7 /* Sources */ = {
+		EB9C9E3821312AC0003FD0EC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB51AD3C20B2A7C800E703D7 /* BetterCompareNSString.m in Sources */,
-				EB51ACE220B2A60700E703D7 /* ViewController.swift in Sources */,
-				EB51AD3220B2A7C800E703D7 /* RenamedPathPair.m in Sources */,
-				EB51AD4220B2A7C800E703D7 /* BetterCompareNSString.h in Sources */,
-				EB51AD4720B2A89C00E703D7 /* Definitions.swift in Sources */,
-				EB51AD4D20B2A8AC00E703D7 /* R-NameUITests-Bridging-Header.h in Sources */,
-				EB51AD3420B2A7C800E703D7 /* SequentialNumberChecker.h in Sources */,
-				EB51AD2E20B2A7C800E703D7 /* RNameController.h in Sources */,
-				EB51AD3B20B2A7C800E703D7 /* RenamedPathPair.h in Sources */,
-				EB51AD2D20B2A7C800E703D7 /* TransparentDraggedWindow.m in Sources */,
-				EB51AD3E20B2A7C800E703D7 /* ControllerDefinitions.h in Sources */,
-				EB51AD2C20B2A7C800E703D7 /* FilesRenamer.m in Sources */,
-				EB51AD3A20B2A7C800E703D7 /* RenamedPathPairContainer.h in Sources */,
-				EB51AD4320B2A7C800E703D7 /* StringsManager.h in Sources */,
-				EB51AD4F20B2A97100E703D7 /* ControllerDefinitions.swift in Sources */,
-				EB51AD4420B2A7C800E703D7 /* FilesRenamer.h in Sources */,
-				EB51AD3520B2A7C800E703D7 /* TransparentDraggedWindow.h in Sources */,
-				EB51AD4B20B2A8AC00E703D7 /* R-Name-Bridging-Header.h in Sources */,
-				EB51ACE020B2A60700E703D7 /* AppDelegate.swift in Sources */,
-				EB51AD3320B2A7C800E703D7 /* main.m in Sources */,
-				EB51AD3720B2A7C800E703D7 /* RenamedPathPairContainer.m in Sources */,
-				EB51AD3D20B2A7C800E703D7 /* SequentialNumberChecker.m in Sources */,
-				EB51AD4020B2A7C800E703D7 /* Definitions.h in Sources */,
-				EB51AD3020B2A7C800E703D7 /* RNameController.m in Sources */,
-				EB51AD3620B2A7C800E703D7 /* StringsManager.m in Sources */,
-				EB51AD4C20B2A8AC00E703D7 /* R-NameTests-Bridging-Header.h in Sources */,
+				EB9C9E4221312AC0003FD0EC /* ViewController.swift in Sources */,
+				EB9C9E4021312AC0003FD0EC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EB51ACEA20B2A61000E703D7 /* Sources */ = {
+		EB9C9E4A21312AC4003FD0EC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB51AD5020B2A97100E703D7 /* ControllerDefinitions.swift in Sources */,
-				EB51ACF320B2A61000E703D7 /* R_Name_STests.swift in Sources */,
+				EB9C9E5321312AC4003FD0EC /* R_Name_STests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EB51ACF520B2A61000E703D7 /* Sources */ = {
+		EB9C9E5521312AC4003FD0EC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB51AD5120B2A97100E703D7 /* ControllerDefinitions.swift in Sources */,
-				EB51ACFE20B2A61000E703D7 /* R_Name_SUITests.swift in Sources */,
+				EB9C9E5E21312AC4003FD0EC /* R_Name_SUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		EB51ACF020B2A61000E703D7 /* PBXTargetDependency */ = {
+		EB9C9E5021312AC4003FD0EC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = EB51ACDB20B2A60700E703D7 /* R-Name S */;
-			targetProxy = EB51ACEF20B2A61000E703D7 /* PBXContainerItemProxy */;
+			target = EB9C9E3B21312AC0003FD0EC /* R-Name S */;
+			targetProxy = EB9C9E4F21312AC4003FD0EC /* PBXContainerItemProxy */;
 		};
-		EB51ACFB20B2A61000E703D7 /* PBXTargetDependency */ = {
+		EB9C9E5B21312AC4003FD0EC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = EB51ACDB20B2A60700E703D7 /* R-Name S */;
-			targetProxy = EB51ACFA20B2A61000E703D7 /* PBXContainerItemProxy */;
+			target = EB9C9E3B21312AC0003FD0EC /* R-Name S */;
+			targetProxy = EB9C9E5A21312AC4003FD0EC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		EB51ACE520B2A61000E703D7 /* Main.storyboard */ = {
+		EB9C9E4521312AC4003FD0EC /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				EB51ACE620B2A61000E703D7 /* Base */,
+				EB9C9E4621312AC4003FD0EC /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -465,7 +302,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		EB51AD0020B2A61000E703D7 /* Debug */ = {
+		EB9C9E6021312AC4003FD0EC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -516,8 +353,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -525,7 +363,7 @@
 			};
 			name = Debug;
 		};
-		EB51AD0120B2A61000E703D7 /* Release */ = {
+		EB9C9E6121312AC4003FD0EC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -570,19 +408,19 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 			};
 			name = Release;
 		};
-		EB51AD0320B2A61000E703D7 /* Debug */ = {
+		EB9C9E6321312AC4003FD0EC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "R-Name S/R_Name_S.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -594,17 +432,14 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "au.net.p2made.R-Name-S";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "R-Name S/Objective C/R-Name S-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
-		EB51AD0420B2A61000E703D7 /* Release */ = {
+		EB9C9E6421312AC4003FD0EC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "R-Name S/R_Name_S.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -616,12 +451,11 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "au.net.p2made.R-Name-S";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "R-Name S/Objective C/R-Name S-Bridging-Header.h";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
-		EB51AD0620B2A61000E703D7 /* Debug */ = {
+		EB9C9E6621312AC4003FD0EC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -637,12 +471,12 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "au.net.p2made.R-Name-STests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/R-Name S.app/Contents/MacOS/R-Name S";
 			};
 			name = Debug;
 		};
-		EB51AD0720B2A61000E703D7 /* Release */ = {
+		EB9C9E6721312AC4003FD0EC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -658,12 +492,12 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "au.net.p2made.R-Name-STests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/R-Name S.app/Contents/MacOS/R-Name S";
 			};
 			name = Release;
 		};
-		EB51AD0920B2A61000E703D7 /* Debug */ = {
+		EB9C9E6921312AC4003FD0EC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -678,12 +512,12 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "au.net.p2made.R-Name-SUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TEST_TARGET_NAME = "R-Name S";
 			};
 			name = Debug;
 		};
-		EB51AD0A20B2A61000E703D7 /* Release */ = {
+		EB9C9E6A21312AC4003FD0EC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -698,7 +532,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "au.net.p2made.R-Name-SUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TEST_TARGET_NAME = "R-Name S";
 			};
 			name = Release;
@@ -706,43 +540,43 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EB51ACD720B2A60700E703D7 /* Build configuration list for PBXProject "R-Name S" */ = {
+		EB9C9E3721312AC0003FD0EC /* Build configuration list for PBXProject "R-Name S" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EB51AD0020B2A61000E703D7 /* Debug */,
-				EB51AD0120B2A61000E703D7 /* Release */,
+				EB9C9E6021312AC4003FD0EC /* Debug */,
+				EB9C9E6121312AC4003FD0EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EB51AD0220B2A61000E703D7 /* Build configuration list for PBXNativeTarget "R-Name S" */ = {
+		EB9C9E6221312AC4003FD0EC /* Build configuration list for PBXNativeTarget "R-Name S" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EB51AD0320B2A61000E703D7 /* Debug */,
-				EB51AD0420B2A61000E703D7 /* Release */,
+				EB9C9E6321312AC4003FD0EC /* Debug */,
+				EB9C9E6421312AC4003FD0EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EB51AD0520B2A61000E703D7 /* Build configuration list for PBXNativeTarget "R-Name STests" */ = {
+		EB9C9E6521312AC4003FD0EC /* Build configuration list for PBXNativeTarget "R-Name STests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EB51AD0620B2A61000E703D7 /* Debug */,
-				EB51AD0720B2A61000E703D7 /* Release */,
+				EB9C9E6621312AC4003FD0EC /* Debug */,
+				EB9C9E6721312AC4003FD0EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EB51AD0820B2A61000E703D7 /* Build configuration list for PBXNativeTarget "R-Name SUITests" */ = {
+		EB9C9E6821312AC4003FD0EC /* Build configuration list for PBXNativeTarget "R-Name SUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EB51AD0920B2A61000E703D7 /* Debug */,
-				EB51AD0A20B2A61000E703D7 /* Release */,
+				EB9C9E6921312AC4003FD0EC /* Debug */,
+				EB9C9E6A21312AC4003FD0EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = EB51ACD420B2A60700E703D7 /* Project object */;
+	rootObject = EB9C9E3421312AC0003FD0EC /* Project object */;
 }
