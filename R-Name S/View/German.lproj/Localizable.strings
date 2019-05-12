@@ -1,0 +1,10 @@
+"CheckWebURL" = "http://www2.mitsuya.nuem.nagoya-u.ac.jp/~tagaya/index_en.html";
+"UNICEFWebURL" = "http://www.unicef.org/";
+"UNICEFDonationURL" = "http://www.supportunicef.org/forms/whichcountry2.html";
+"AuthorsMailAddressForUNICEFDonation" = "mailto:Tagaya%20Yoichi%20%3ctayo@tulip.sannet.ne.jp%3e?subject=[R-Name]%20Lasse%20den%20Autor%20meinen%20Namen%20in%20der%20nachsten%20Version%20auflisten";
+"MessageDone" = "Fertig!";
+"ErrMessageExist" = "Einige Dateinamen sind doppelt vorhanden.";
+"ErrMessageLong" = "Einige Dateinamen haben mehr als 255 Zeichen.";
+"ErrMessageDotBeginning" = "Einige Dateinamen haben einen ‚Äò.‚Äô (Punkt) am Anfang.";
+"ErrMessageInvalidRegexp" = "Sie haben einen ungültigen 'regular expression' benutzt.";
+"ErrMessageInvalidCharacter" = "Sie haben ein ‚Äò:‚Äô (Doppelpunkt) eingegeben.";

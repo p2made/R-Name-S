@@ -11,9 +11,12 @@
 		EB2778E42288573B00CBC45C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2778E32288573B00CBC45C /* ViewController.swift */; };
 		EB2778E72288573B00CBC45C /* R_Name_S.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EB2778E52288573B00CBC45C /* R_Name_S.xcdatamodeld */; };
 		EB2778E92288574200CBC45C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB2778E82288574200CBC45C /* Assets.xcassets */; };
-		EB2778EC2288574200CBC45C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB2778EA2288574200CBC45C /* Main.storyboard */; };
 		EB2778F82288574200CBC45C /* R_Name_STests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2778F72288574200CBC45C /* R_Name_STests.swift */; };
 		EB2779032288574200CBC45C /* R_Name_SUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2779022288574200CBC45C /* R_Name_SUITests.swift */; };
+		EBEB016C228870DE0037AC02 /* Controller in Resources */ = {isa = PBXBuildFile; fileRef = EBEB0169228870DD0037AC02 /* Controller */; };
+		EBEB016D228870DE0037AC02 /* Other Sources in Resources */ = {isa = PBXBuildFile; fileRef = EBEB016A228870DD0037AC02 /* Other Sources */; };
+		EBEB016E228870DE0037AC02 /* Model in Resources */ = {isa = PBXBuildFile; fileRef = EBEB016B228870DE0037AC02 /* Model */; };
+		EBEB0171228871780037AC02 /* View in Resources */ = {isa = PBXBuildFile; fileRef = EBEB0170228871780037AC02 /* View */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +42,6 @@
 		EB2778E32288573B00CBC45C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EB2778E62288573B00CBC45C /* R_Name_S.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = R_Name_S.xcdatamodel; sourceTree = "<group>"; };
 		EB2778E82288574200CBC45C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		EB2778EB2288574200CBC45C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EB2778ED2288574200CBC45C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB2778EE2288574200CBC45C /* R_Name_S.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = R_Name_S.entitlements; sourceTree = "<group>"; };
 		EB2778F32288574200CBC45C /* R-Name STests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "R-Name STests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,6 +50,10 @@
 		EB2778FE2288574200CBC45C /* R-Name SUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "R-Name SUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB2779022288574200CBC45C /* R_Name_SUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = R_Name_SUITests.swift; sourceTree = "<group>"; };
 		EB2779042288574200CBC45C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBEB0169228870DD0037AC02 /* Controller */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Controller; sourceTree = "<group>"; };
+		EBEB016A228870DD0037AC02 /* Other Sources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Other Sources"; sourceTree = "<group>"; };
+		EBEB016B228870DE0037AC02 /* Model */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Model; sourceTree = "<group>"; };
+		EBEB0170228871780037AC02 /* View */ = {isa = PBXFileReference; lastKnownFileType = folder; path = View; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,8 +106,11 @@
 			children = (
 				EB2778E12288573B00CBC45C /* AppDelegate.swift */,
 				EB2778E32288573B00CBC45C /* ViewController.swift */,
+				EBEB016B228870DE0037AC02 /* Model */,
+				EBEB0170228871780037AC02 /* View */,
+				EBEB0169228870DD0037AC02 /* Controller */,
+				EBEB016A228870DD0037AC02 /* Other Sources */,
 				EB2778E82288574200CBC45C /* Assets.xcassets */,
-				EB2778EA2288574200CBC45C /* Main.storyboard */,
 				EB2778ED2288574200CBC45C /* Info.plist */,
 				EB2778EE2288574200CBC45C /* R_Name_S.entitlements */,
 				EB2778E52288573B00CBC45C /* R_Name_S.xcdatamodeld */,
@@ -231,8 +240,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBEB016E228870DE0037AC02 /* Model in Resources */,
 				EB2778E92288574200CBC45C /* Assets.xcassets in Resources */,
-				EB2778EC2288574200CBC45C /* Main.storyboard in Resources */,
+				EBEB016C228870DE0037AC02 /* Controller in Resources */,
+				EBEB0171228871780037AC02 /* View in Resources */,
+				EBEB016D228870DE0037AC02 /* Other Sources in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,17 +305,6 @@
 			targetProxy = EB2778FF2288574200CBC45C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		EB2778EA2288574200CBC45C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EB2778EB2288574200CBC45C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		EB2779052288574200CBC45C /* Debug */ = {

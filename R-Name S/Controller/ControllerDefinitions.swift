@@ -6,7 +6,7 @@
 //  Copyright © 2018 p2made. All rights reserved.
 //
 
-import Foundation
+import Foundation // necessary?
 
 enum RenamingKinds : Int {
     case find_AND_REPLACE = 0
