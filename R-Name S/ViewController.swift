@@ -2,8 +2,8 @@
 //  ViewController.swift
 //  R-Name S
 //
-//  Created by Pedro Plowman on 25/8/18.
-//  Copyright © 2018 p2made. All rights reserved.
+//  Created by Pedro Plowman on 12/5/19.
+//  Copyright © 2019 p2made. All rights reserved.
 //
 
 import Cocoa

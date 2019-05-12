@@ -1,0 +1,94 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = NSObject; LANGUAGE = ObjC; }, 
+        {
+            ACTIONS = {
+                checkTheWebsite = id; 
+                clearList = id; 
+                doUNICEF = id; 
+                okayErrorMessageWindow = id; 
+                openFiles = id; 
+                preserveExtensionOfSequentialNumbering = id; 
+                renameActually = id; 
+                setAddFiles = id; 
+                setAddFolders = id; 
+                setOpaqueLevelOfWindows = id; 
+                setRecurseFolder = id; 
+                setRenameMethod = id; 
+                showNewNames = id; 
+                sortFilesOfList = id; 
+            }; 
+            CLASS = RNameController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                myBoxSettings = NSBox; 
+                myBtnAddFiles = id; 
+                myBtnAddFolders = id; 
+                myBtnChangeCasesPreserveExtension = id; 
+                myBtnFindRepCaseInsensitive = id; 
+                myBtnFindRepPreserveExtension = id; 
+                myBtnFindRepRegularExpression = id; 
+                myBtnFindRepReplaceAllFound = id; 
+                myBtnRecursingFolder = id; 
+                myBtnRemvCharBegOrEndPreserveExtension = id; 
+                myBtnRemvCharRangePreserveExtension = id; 
+                myBtnRenameNow = id; 
+                myBtnSeqNumPreserveExtension = id; 
+                myBtnSeqNumSameFigures = id; 
+                myBtnclPrefClearListAutomatically = id; 
+                myBtnclPrefQuitApplication = id; 
+                myBtnclRemvCharRangeFromBeginning = id; 
+                myBtnclRemvCharRangeFromEnd = id; 
+                myCmbboxSeqNumExtension = id; 
+                myCmboxAddOrRepExtExtension = id; 
+                myPidIndicator = id; 
+                myPubtnRenamingMethods = id; 
+                myPubtnSeqNumSort = id; 
+                mySldrPrefOpaqueLevel = id; 
+                myStprRemvCharBegOrEndNumberOfChars = id; 
+                myStprRemvCharRangeFromNumber = id; 
+                myStprRemvCharRangeNumOfChars = id; 
+                myStprSeqNumFirstNumber = id; 
+                myStprSeqNumLeastFigures = id; 
+                myStprSeqNumStepValue = id; 
+                myTblviewFilesList = id; 
+                myTxtfldAddCharCharacters = id; 
+                myTxtfldErrorMessage = id; 
+                myTxtfldFindRepFindString = id; 
+                myTxtfldFindRepReplaceString = id; 
+                myTxtfldRemvCharBegOrEndNumberOfChars = id; 
+                myTxtfldRemvCharRangeFromNumber = id; 
+                myTxtfldRemvCharRangeNumOfChars = id; 
+                myTxtfldSeqNumFirstNumber = id; 
+                myTxtfldSeqNumLeastFigures = id; 
+                myTxtfldSeqNumPrefix = id; 
+                myTxtfldSeqNumStepValue = id; 
+                myTxtfldSeqNumSuffix = id; 
+                myTxtfldStatusMessage = id; 
+                myTxtviewPrefExtensionsList = id; 
+                myViewAddCharacters = id; 
+                myViewAddOrReplaceExtension = id; 
+                myViewChangeCases = id; 
+                myViewFindAndReplace = id; 
+                myViewRemoveCharactersAtRange = id; 
+                myViewRemoveCharactersFromBegginningOrEnd = id; 
+                myViewRemoveExtension = id; 
+                myViewSequentialNumber = id; 
+                myWindowDonation = id; 
+                myWindowErrorMessage = id; 
+                myWindowMain = id; 
+                myWindowPreferences = id; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = SequentialNumberChecker; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {concludeDragOperation = id; draggingExited = id; }; 
+            CLASS = TransparentDraggedWindow; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSWindow; 
+        }
+    ); 
+    IBVersion = 1; 
+}

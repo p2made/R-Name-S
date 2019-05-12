@@ -1,0 +1,61 @@
+/*
+ *  Definitions.h
+ *  Active R-Name
+ *
+ *  Created by Yoichi Tagaya on Tue Nov 05 2002.
+ *  Copyright (c) 2002 Yoichi Tagaya. All rights reserved.
+ *
+ */
+
+
+typedef enum {
+	NO_DESTINATION = 0,
+	OK = 1,
+	SAME_EXCEPT_CASES = 2,
+	SAME = 3,
+	EXIST = 4,
+	LONG = 5,
+	START_WITH_DOT = 6,
+	INVALID_REGEXP = 7,
+	INVALID_CHARACTER = 8
+} PathPairState;
+
+#define MAX_FILENAME_LENGTH 255
+#define STRING_MADE_OF_INVALID_CHARS @"/"
+
+
+
+typedef enum {
+	NONE = 0,
+	ALPHABETIC = 1,
+	CASE_INSENSITIVE_ALPHABETIC = 2,
+	REVERSE_ALPHABETIC = 3,
+	CASE_INSENSITIVE_REVERSE_ALPHABETIC = 4,
+	SIZE = 5,
+	REVERSE_SIZE = 6,
+	DATE_MODIFIED = 7,
+	REVERSE_DATE_MODIFIED = 8,
+	DATE_CREATED = 9,
+	REVERSE_DATE_CREATED = 10
+} ViewOrder;
+
+
+typedef enum {
+	FIND_REPLACE = 0,
+	REGEXP_FIND_REPLACE,
+	SEQUENTIAL_NUMBER,
+	TO_LOWERCASES,
+	TO_UPPERCASES,
+	TO_CAPITALIZED,
+	ADD_AT_BEGGING,
+	ADD_AT_END,
+	ADD_BEFORE_EXT,
+	REMOVE_CHARACTERS,
+	ADD_EXTENSION,
+	CHANGE_EXTENSION,
+	REMOVE_EXTENSION
+} RenameingMethods;
+
+
+
+
