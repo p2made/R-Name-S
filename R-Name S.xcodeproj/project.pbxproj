@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EB2778E22288573B00CBC45C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2778E12288573B00CBC45C /* AppDelegate.swift */; };
-		EB2778E42288573B00CBC45C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2778E32288573B00CBC45C /* ViewController.swift */; };
 		EB2778E72288573B00CBC45C /* R_Name_S.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EB2778E52288573B00CBC45C /* R_Name_S.xcdatamodeld */; };
 		EB2778E92288574200CBC45C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB2778E82288574200CBC45C /* Assets.xcassets */; };
 		EB2778F82288574200CBC45C /* R_Name_STests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2778F72288574200CBC45C /* R_Name_STests.swift */; };
@@ -38,8 +36,6 @@
 
 /* Begin PBXFileReference section */
 		EB2778DE2288573B00CBC45C /* R-Name S.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "R-Name S.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EB2778E12288573B00CBC45C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EB2778E32288573B00CBC45C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EB2778E62288573B00CBC45C /* R_Name_S.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = R_Name_S.xcdatamodel; sourceTree = "<group>"; };
 		EB2778E82288574200CBC45C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB2778ED2288574200CBC45C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -104,8 +100,6 @@
 		EB2778E02288573B00CBC45C /* R-Name S */ = {
 			isa = PBXGroup;
 			children = (
-				EB2778E12288573B00CBC45C /* AppDelegate.swift */,
-				EB2778E32288573B00CBC45C /* ViewController.swift */,
 				EBEB016B228870DE0037AC02 /* Model */,
 				EBEB0170228871780037AC02 /* View */,
 				EBEB0169228870DD0037AC02 /* Controller */,
@@ -269,8 +263,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB2778E42288573B00CBC45C /* ViewController.swift in Sources */,
-				EB2778E22288573B00CBC45C /* AppDelegate.swift in Sources */,
 				EB2778E72288573B00CBC45C /* R_Name_S.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -463,7 +455,6 @@
 		EB27790B2288574200CBC45C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -484,7 +475,6 @@
 		EB27790C2288574200CBC45C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -505,7 +495,6 @@
 		EB27790E2288574200CBC45C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 866K66F75B;
@@ -525,7 +514,6 @@
 		EB27790F2288574200CBC45C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 866K66F75B;
