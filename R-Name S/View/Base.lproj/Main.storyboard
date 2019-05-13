@@ -205,7 +205,7 @@
                 <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-47" y="-670"/>
+            <point key="canvasLocation" x="-891" y="-1372"/>
         </scene>
         <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">
@@ -214,7 +214,7 @@
                     <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" rightStrut="YES"/>
-                        <rect key="contentRect" x="920" y="547" width="760" height="480"/>
+                        <rect key="contentRect" x="920" y="547" width="640" height="480"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
                         <connections>
                             <outlet property="delegate" destination="B8D-0N-5wS" id="98r-iN-zZc"/>
@@ -226,7 +226,7 @@
                 </windowController>
                 <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="115" y="92"/>
+            <point key="canvasLocation" x="-766" y="-1030"/>
         </scene>
         <!--Window Controller-->
         <scene sceneID="AF2-iO-Ff4">
@@ -247,7 +247,7 @@
                 </windowController>
                 <customObject id="YTy-Ml-9RT" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1159" y="-192"/>
+            <point key="canvasLocation" x="-74" y="-1135"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="PL7-2J-UX8">
@@ -309,7 +309,7 @@
                 </viewController>
                 <customObject id="Wkp-OY-g6B" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1159" y="279"/>
+            <point key="canvasLocation" x="-74" y="-673"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="hIz-AP-VOD">
@@ -459,7 +459,7 @@ DQ
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="115" y="896"/>
+            <point key="canvasLocation" x="-766" y="-371"/>
         </scene>
         <!--ViewFindAndReplace-->
         <scene sceneID="dw8-jj-JK0">
@@ -548,7 +548,7 @@ DQ
                 </viewController>
                 <customObject id="TZo-N0-Gih" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1159" y="600"/>
+            <point key="canvasLocation" x="-41" y="-331"/>
         </scene>
     </scenes>
 </document>
