@@ -11,6 +11,7 @@
 		EB2778E92288574200CBC45C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB2778E82288574200CBC45C /* Assets.xcassets */; };
 		EB2778F82288574200CBC45C /* R_Name_STests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2778F72288574200CBC45C /* R_Name_STests.swift */; };
 		EB2779032288574200CBC45C /* R_Name_SUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2779022288574200CBC45C /* R_Name_SUITests.swift */; };
+		EBE53225228A4B0E0004E63C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE53224228A4B0E0004E63C /* AppDelegate.swift */; };
 		EBEB016C228870DE0037AC02 /* Controller in Resources */ = {isa = PBXBuildFile; fileRef = EBEB0169228870DD0037AC02 /* Controller */; };
 		EBEB016D228870DE0037AC02 /* Other Sources in Resources */ = {isa = PBXBuildFile; fileRef = EBEB016A228870DD0037AC02 /* Other Sources */; };
 		EBEB016E228870DE0037AC02 /* Model in Resources */ = {isa = PBXBuildFile; fileRef = EBEB016B228870DE0037AC02 /* Model */; };
@@ -46,6 +47,7 @@
 		EB2778FE2288574200CBC45C /* R-Name SUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "R-Name SUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB2779022288574200CBC45C /* R_Name_SUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = R_Name_SUITests.swift; sourceTree = "<group>"; };
 		EB2779042288574200CBC45C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBE53224228A4B0E0004E63C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBEB0169228870DD0037AC02 /* Controller */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Controller; sourceTree = "<group>"; };
 		EBEB016A228870DD0037AC02 /* Other Sources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Other Sources"; sourceTree = "<group>"; };
 		EBEB016B228870DE0037AC02 /* Model */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Model; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 		EB2778E02288573B00CBC45C /* R-Name S */ = {
 			isa = PBXGroup;
 			children = (
+				EBE53224228A4B0E0004E63C /* AppDelegate.swift */,
 				EBEB016B228870DE0037AC02 /* Model */,
 				EBEB0170228871780037AC02 /* View */,
 				EBEB0169228870DD0037AC02 /* Controller */,
@@ -198,6 +201,7 @@
 				TargetAttributes = {
 					EB2778DD2288573B00CBC45C = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 					EB2778F22288574200CBC45C = {
 						CreatedOnToolsVersion = 10.2.1;
@@ -263,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBE53225228A4B0E0004E63C /* AppDelegate.swift in Sources */,
 				EB2778E72288573B00CBC45C /* R_Name_S.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,6 +423,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "R-Name S/R_Name_S.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -429,6 +435,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "au.net.p2made.R-Name-S";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -437,6 +444,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "R-Name S/R_Name_S.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -455,6 +463,7 @@
 		EB27790B2288574200CBC45C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -475,6 +484,7 @@
 		EB27790C2288574200CBC45C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -495,6 +505,7 @@
 		EB27790E2288574200CBC45C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 866K66F75B;
@@ -514,6 +525,7 @@
 		EB27790F2288574200CBC45C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 866K66F75B;
