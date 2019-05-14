@@ -201,7 +201,7 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModuleProvider="target"/>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="R_Name_S" customModuleProvider="target"/>
                 <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -265,7 +265,7 @@
         <!--View Controller-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
-                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="R_Name_S" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl">
                         <rect key="frame" x="0.0" y="0.0" width="640" height="307"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -308,9 +308,8 @@
                                     </menu>
                                 </popUpButtonCell>
                             </popUpButton>
-                            <box fixedFrame="YES" title="Settings" translatesAutoresizingMaskIntoConstraints="NO" id="0zY-Dr-l6f">
+                            <box ambiguous="YES" misplaced="YES" title="Settings" translatesAutoresizingMaskIntoConstraints="NO" id="0zY-Dr-l6f">
                                 <rect key="frame" x="17" y="16" width="460" height="241"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <view key="contentView" id="nrt-Ny-g3g">
                                     <rect key="frame" x="3" y="3" width="454" height="220"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -326,72 +325,73 @@
                                 </view>
                                 <font key="titleFont" metaFont="system"/>
                             </box>
-                            <box fixedFrame="YES" title="Add to List" translatesAutoresizingMaskIntoConstraints="NO" id="Atl-aK-fDK">
+                            <box ambiguous="YES" title="Add to List" translatesAutoresizingMaskIntoConstraints="NO" id="Atl-aK-fDK">
                                 <rect key="frame" x="479" y="188" width="144" height="99"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
                                 <view key="contentView" id="9X5-ym-oMA">
                                     <rect key="frame" x="3" y="3" width="138" height="78"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <button fixedFrame="YES" imageHugsTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Scc-HK-sa4">
+                                        <button imageHugsTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Scc-HK-sa4">
                                             <rect key="frame" x="8" y="56" width="63" height="18"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <buttonCell key="cell" type="check" title="Files" bezelStyle="regularSquare" imagePosition="left" alignment="left" state="on" inset="2" id="IF0-OP-1qv">
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
                                         </button>
-                                        <button fixedFrame="YES" imageHugsTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vMQ-DI-UF7">
+                                        <button misplaced="YES" imageHugsTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vMQ-DI-UF7">
                                             <rect key="frame" x="8" y="34" width="69" height="18"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <buttonCell key="cell" type="check" title="Folders" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="0eU-44-BdH">
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
                                         </button>
-                                        <button fixedFrame="YES" imageHugsTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2bR-So-mje">
+                                        <button imageHugsTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2bR-So-mje">
                                             <rect key="frame" x="8" y="7" width="115" height="18"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <buttonCell key="cell" type="check" title="Recurse Folder" bezelStyle="regularSquare" imagePosition="left" alignment="left" state="on" inset="2" id="0am-3u-kiV">
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
                                         </button>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="2bR-So-mje" secondAttribute="bottom" constant="9" id="7hU-ga-OVS"/>
+                                        <constraint firstItem="vMQ-DI-UF7" firstAttribute="top" secondItem="Scc-HK-sa4" secondAttribute="bottom" constant="8" id="EDY-M7-E0i"/>
+                                        <constraint firstAttribute="trailing" secondItem="Scc-HK-sa4" secondAttribute="trailing" constant="69" id="I8Y-gv-YbE"/>
+                                        <constraint firstAttribute="trailing" secondItem="2bR-So-mje" secondAttribute="trailing" constant="17" id="JTn-Ce-kxE"/>
+                                        <constraint firstItem="Scc-HK-sa4" firstAttribute="leading" secondItem="vMQ-DI-UF7" secondAttribute="leading" id="MkV-Kg-mfK"/>
+                                        <constraint firstItem="2bR-So-mje" firstAttribute="leading" secondItem="vMQ-DI-UF7" secondAttribute="leading" id="SqL-eJ-LaB"/>
+                                        <constraint firstItem="2bR-So-mje" firstAttribute="leading" secondItem="9X5-ym-oMA" secondAttribute="leading" constant="10" id="ldw-Wj-g9J"/>
+                                        <constraint firstItem="2bR-So-mje" firstAttribute="top" secondItem="vMQ-DI-UF7" secondAttribute="bottom" constant="13" id="xMM-We-FT4"/>
+                                    </constraints>
                                 </view>
                                 <font key="titleFont" metaFont="system"/>
                             </box>
-                            <progressIndicator wantsLayer="YES" verticalHuggingPriority="750" fixedFrame="YES" maxValue="100" bezeled="NO" controlSize="small" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="WZY-iS-9A0">
+                            <progressIndicator wantsLayer="YES" verticalHuggingPriority="750" ambiguous="YES" maxValue="100" bezeled="NO" controlSize="small" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="WZY-iS-9A0">
                                 <rect key="frame" x="482" y="20" width="138" height="12"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
                             </progressIndicator>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t0A-Km-gfp">
+                            <button verticalHuggingPriority="750" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t0A-Km-gfp">
                                 <rect key="frame" x="476" y="144" width="150" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="push" title="Select Files" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="yf8-ae-bhj">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                             </button>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7GK-NV-RAI">
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="7GK-NV-RAI">
                                 <rect key="frame" x="476" y="72" width="150" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="push" title="Clear List" bezelStyle="rounded" alignment="center" borderStyle="border" inset="2" id="fgq-6b-iUp">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                             </button>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fy0-zl-WCT">
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Fy0-zl-WCT">
                                 <rect key="frame" x="476" y="39" width="150" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="push" title="Rename Now" bezelStyle="rounded" alignment="center" enabled="NO" borderStyle="border" inset="2" id="jVu-vO-mpN">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                             </button>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nZN-UH-bvo">
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="nZN-UH-bvo">
                                 <rect key="frame" x="476" y="105" width="150" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="push" title="Show New Names" bezelStyle="rounded" alignment="center" borderStyle="border" inset="2" id="PcN-Ux-0XA">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -401,6 +401,23 @@ DQ
                                 </buttonCell>
                             </button>
                         </subviews>
+                        <constraints>
+                            <constraint firstItem="7GK-NV-RAI" firstAttribute="trailing" secondItem="t0A-Km-gfp" secondAttribute="trailing" id="6QX-y9-0d4"/>
+                            <constraint firstItem="7GK-NV-RAI" firstAttribute="trailing" secondItem="Fy0-zl-WCT" secondAttribute="trailing" id="DRY-Zm-zQc"/>
+                            <constraint firstAttribute="trailing" secondItem="7GK-NV-RAI" secondAttribute="trailing" constant="20" symbolic="YES" id="Ger-Fd-4rh"/>
+                            <constraint firstItem="7GK-NV-RAI" firstAttribute="leading" secondItem="Atl-aK-fDK" secondAttribute="leading" id="ODb-lH-zaD"/>
+                            <constraint firstAttribute="bottom" secondItem="7GK-NV-RAI" secondAttribute="bottom" constant="79" id="V7n-V8-XXD"/>
+                            <constraint firstItem="Fy0-zl-WCT" firstAttribute="top" secondItem="7GK-NV-RAI" secondAttribute="bottom" constant="12" symbolic="YES" id="X9Y-Og-9rB"/>
+                            <constraint firstItem="7GK-NV-RAI" firstAttribute="trailing" secondItem="Atl-aK-fDK" secondAttribute="trailing" id="aG0-CH-C4N"/>
+                            <constraint firstItem="7GK-NV-RAI" firstAttribute="top" secondItem="nZN-UH-bvo" secondAttribute="bottom" constant="12" symbolic="YES" id="aVU-DP-r2b"/>
+                            <constraint firstItem="7GK-NV-RAI" firstAttribute="leading" secondItem="Fy0-zl-WCT" secondAttribute="leading" id="dXE-xd-yZy"/>
+                            <constraint firstItem="7GK-NV-RAI" firstAttribute="leading" secondItem="WZY-iS-9A0" secondAttribute="leading" id="eAn-9u-6qv"/>
+                            <constraint firstItem="7GK-NV-RAI" firstAttribute="leading" secondItem="0zY-Dr-l6f" secondAttribute="trailing" constant="8" symbolic="YES" id="gT3-SX-TY8"/>
+                            <constraint firstItem="7GK-NV-RAI" firstAttribute="leading" secondItem="nZN-UH-bvo" secondAttribute="leading" id="gTD-BB-wA8"/>
+                            <constraint firstItem="7GK-NV-RAI" firstAttribute="leading" secondItem="t0A-Km-gfp" secondAttribute="leading" id="jAx-xK-hdV"/>
+                            <constraint firstItem="7GK-NV-RAI" firstAttribute="trailing" secondItem="WZY-iS-9A0" secondAttribute="trailing" id="jjt-G2-0M4"/>
+                            <constraint firstItem="7GK-NV-RAI" firstAttribute="trailing" secondItem="nZN-UH-bvo" secondAttribute="trailing" id="lvm-Nm-cSN"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>

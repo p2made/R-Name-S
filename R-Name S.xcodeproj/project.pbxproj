@@ -14,6 +14,18 @@
 		EBB24C41228A5F2700E03E18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBB24C3F228A5F2700E03E18 /* Main.storyboard */; };
 		EBB24C4D228A5F2700E03E18 /* R_Name_STests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB24C4C228A5F2700E03E18 /* R_Name_STests.swift */; };
 		EBB24C58228A5F2700E03E18 /* R_Name_SUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB24C57228A5F2700E03E18 /* R_Name_SUITests.swift */; };
+		EBC47968228A916700DAF894 /* PerlWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC47966228A916600DAF894 /* PerlWrapper.swift */; };
+		EBC47969228A916700DAF894 /* regex.pl in Resources */ = {isa = PBXBuildFile; fileRef = EBC47967228A916700DAF894 /* regex.pl */; };
+		EBC47989228A91A000DAF894 /* SequentialNumberChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC4797F228A91A000DAF894 /* SequentialNumberChecker.swift */; };
+		EBC4798A228A91A000DAF894 /* RenamedPathPairContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC47980228A91A000DAF894 /* RenamedPathPairContainer.swift */; };
+		EBC4798B228A91A000DAF894 /* FilesRenamer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC47981228A91A000DAF894 /* FilesRenamer.swift */; };
+		EBC4798C228A91A000DAF894 /* ControllerDefinitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC47982228A91A000DAF894 /* ControllerDefinitions.swift */; };
+		EBC4798D228A91A000DAF894 /* RenamedPathPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC47983228A91A000DAF894 /* RenamedPathPair.swift */; };
+		EBC4798E228A91A000DAF894 /* TransparentDraggedWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC47984228A91A000DAF894 /* TransparentDraggedWindow.swift */; };
+		EBC4798F228A91A000DAF894 /* RNameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC47985228A91A000DAF894 /* RNameController.swift */; };
+		EBC47990228A91A000DAF894 /* BetterCompareNSString.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC47986228A91A000DAF894 /* BetterCompareNSString.swift */; };
+		EBC47991228A91A000DAF894 /* Definitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC47987228A91A000DAF894 /* Definitions.swift */; };
+		EBC47992228A91A000DAF894 /* StringsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC47988228A91A000DAF894 /* StringsManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +60,18 @@
 		EBB24C53228A5F2700E03E18 /* R-Name SUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "R-Name SUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBB24C57228A5F2700E03E18 /* R_Name_SUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = R_Name_SUITests.swift; sourceTree = "<group>"; };
 		EBB24C59228A5F2700E03E18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBC47966228A916600DAF894 /* PerlWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerlWrapper.swift; sourceTree = "<group>"; };
+		EBC47967228A916700DAF894 /* regex.pl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.perl; path = regex.pl; sourceTree = "<group>"; };
+		EBC4797F228A91A000DAF894 /* SequentialNumberChecker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SequentialNumberChecker.swift; sourceTree = "<group>"; };
+		EBC47980228A91A000DAF894 /* RenamedPathPairContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RenamedPathPairContainer.swift; sourceTree = "<group>"; };
+		EBC47981228A91A000DAF894 /* FilesRenamer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilesRenamer.swift; sourceTree = "<group>"; };
+		EBC47982228A91A000DAF894 /* ControllerDefinitions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControllerDefinitions.swift; sourceTree = "<group>"; };
+		EBC47983228A91A000DAF894 /* RenamedPathPair.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RenamedPathPair.swift; sourceTree = "<group>"; };
+		EBC47984228A91A000DAF894 /* TransparentDraggedWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransparentDraggedWindow.swift; sourceTree = "<group>"; };
+		EBC47985228A91A000DAF894 /* RNameController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNameController.swift; sourceTree = "<group>"; };
+		EBC47986228A91A000DAF894 /* BetterCompareNSString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BetterCompareNSString.swift; sourceTree = "<group>"; };
+		EBC47987228A91A000DAF894 /* Definitions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Definitions.swift; sourceTree = "<group>"; };
+		EBC47988228A91A000DAF894 /* StringsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringsManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +126,8 @@
 				EBB24C38228A5F2400E03E18 /* ViewController.swift */,
 				EBB24C3D228A5F2700E03E18 /* Assets.xcassets */,
 				EBB24C3F228A5F2700E03E18 /* Main.storyboard */,
+				EBC47965228A913700DAF894 /* PerlWrapper */,
+				EBC4796A228A917100DAF894 /* Stubs */,
 				EBB24C42228A5F2700E03E18 /* Info.plist */,
 				EBB24C43228A5F2700E03E18 /* R_Name_S.entitlements */,
 				EBB24C3A228A5F2500E03E18 /* R_Name_S.xcdatamodeld */,
@@ -125,6 +151,32 @@
 				EBB24C59228A5F2700E03E18 /* Info.plist */,
 			);
 			path = "R-Name SUITests";
+			sourceTree = "<group>";
+		};
+		EBC47965228A913700DAF894 /* PerlWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				EBC47966228A916600DAF894 /* PerlWrapper.swift */,
+				EBC47967228A916700DAF894 /* regex.pl */,
+			);
+			path = PerlWrapper;
+			sourceTree = "<group>";
+		};
+		EBC4796A228A917100DAF894 /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				EBC47987228A91A000DAF894 /* Definitions.swift */,
+				EBC47982228A91A000DAF894 /* ControllerDefinitions.swift */,
+				EBC47986228A91A000DAF894 /* BetterCompareNSString.swift */,
+				EBC47981228A91A000DAF894 /* FilesRenamer.swift */,
+				EBC47983228A91A000DAF894 /* RenamedPathPair.swift */,
+				EBC47980228A91A000DAF894 /* RenamedPathPairContainer.swift */,
+				EBC47985228A91A000DAF894 /* RNameController.swift */,
+				EBC4797F228A91A000DAF894 /* SequentialNumberChecker.swift */,
+				EBC47988228A91A000DAF894 /* StringsManager.swift */,
+				EBC47984228A91A000DAF894 /* TransparentDraggedWindow.swift */,
+			);
+			path = Stubs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBB24C3E228A5F2700E03E18 /* Assets.xcassets in Resources */,
+				EBC47969228A916700DAF894 /* regex.pl in Resources */,
 				EBB24C41228A5F2700E03E18 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,9 +310,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBC47991228A91A000DAF894 /* Definitions.swift in Sources */,
+				EBC47968228A916700DAF894 /* PerlWrapper.swift in Sources */,
 				EBB24C39228A5F2400E03E18 /* ViewController.swift in Sources */,
 				EBB24C37228A5F2400E03E18 /* AppDelegate.swift in Sources */,
+				EBC47990228A91A000DAF894 /* BetterCompareNSString.swift in Sources */,
+				EBC47989228A91A000DAF894 /* SequentialNumberChecker.swift in Sources */,
+				EBC4798D228A91A000DAF894 /* RenamedPathPair.swift in Sources */,
+				EBC4798B228A91A000DAF894 /* FilesRenamer.swift in Sources */,
 				EBB24C3C228A5F2500E03E18 /* R_Name_S.xcdatamodeld in Sources */,
+				EBC4798F228A91A000DAF894 /* RNameController.swift in Sources */,
+				EBC4798C228A91A000DAF894 /* ControllerDefinitions.swift in Sources */,
+				EBC4798A228A91A000DAF894 /* RenamedPathPairContainer.swift in Sources */,
+				EBC47992228A91A000DAF894 /* StringsManager.swift in Sources */,
+				EBC4798E228A91A000DAF894 /* TransparentDraggedWindow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
