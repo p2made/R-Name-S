@@ -419,6 +419,9 @@ DQ
                             <constraint firstItem="7GK-NV-RAI" firstAttribute="trailing" secondItem="nZN-UH-bvo" secondAttribute="trailing" id="lvm-Nm-cSN"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="zoopy" destination="Kgp-YR-h8H" id="JPU-rS-nf1"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>

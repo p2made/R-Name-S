@@ -111,14 +111,14 @@
 	if ([tkPerl terminationStatus] == 0) {
 		NSData *dtOutput = [[ppOutput fileHandleForReading] availableData];
 		NSString *strOutput = [[NSString alloc] initWithData: dtOutput
-		                                            encoding: NSUTF8StringEncoding];
+		encoding: NSUTF8StringEncoding];
 		[strOutput autorelease];
 		
 		return strOutput;
 	}
 	else {
 		[NSException raise: INVALID_REG_EXP_EXCEPTION
-		            format: @"Invalid Regular Expression"];
+		format: @"Invalid Regular Expression"];
 		return @"";
 	}
 }

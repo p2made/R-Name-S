@@ -10,13 +10,9 @@
 // progress indicator.
 // - (void) endOneRenaming;
 
-
-
 #import <Foundation/Foundation.h>
 #import "Definitions.h"
 #import "RenamedPathPair.h"
-
-
 
 @interface RenamedPathPairContainer : NSObject {
 	NSMutableArray *myMaViewOrder;
@@ -37,7 +33,6 @@
 						  atDirectory: (NSString *)strDPath;
 - (RenamedPathPair *) pathPairAtViewIndex: (int)iIndex;
 
-
 - (NSString *) sourceLastPathComponentAtViewIndex: (int)iIndex;
 - (PathPairState) setDestinationLastPathComponent: (NSString *)strDLastPathComponent
 												  AtViewIndex: (int)iIndex;
@@ -51,14 +46,7 @@
 
 - (void) sortViewOrderBy: (ViewOrder)vo;
 
-
 // For debug
 - (NSString *) description;
 
-
-
 @end
-
-
-
-

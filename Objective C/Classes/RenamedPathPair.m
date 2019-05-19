@@ -8,16 +8,15 @@
 
 #import "RenamedPathPair.h"
 
-
-
 @implementation RenamedPathPair
 
 #pragma mark ##PrivateMethods##
 
 // This method set 'myBActualRenaming' and 'myBActualRenaming'.
+
 - (void) checkAndSetPathPairState
 {
-	int iRDPLength = [myStrRelativeDestinationPath length];
+	int iRDPLength = (int)[myStrRelativeDestinationPath length];
 	
 	if (iRDPLength == 0) {
 		myPpsState = NO_DESTINATION;
@@ -27,19 +26,18 @@
 		myPpsState = LONG;
 		myBActualRenaming = NO;
 	}
-	else if ([myStrRelativeDestinationPath isEqualToString: 
-	                                      myStrRelativeSourcePath]) {
+	else if ([myStrRelativeDestinationPath isEqualToString:
+			  myStrRelativeSourcePath]) {
 		myPpsState = SAME;
 		myBActualRenaming = NO;
 	}
 	else if ([myStrRelativeDestinationPath caseInsensitiveCompare:
-	                     myStrRelativeSourcePath] == NSOrderedSame) {
+			  myStrRelativeSourcePath] == NSOrderedSame) {
 		myPpsState = SAME_EXCEPT_CASES;
 		myBActualRenaming = YES;
 	}
 	else if ([[NSFileManager defaultManager] fileExistsAtPath:
-					[myStrCurrentDirectoryPath stringByAppendingPathComponent: 
-					                               myStrRelativeDestinationPath]]) {
+			  [myStrCurrentDirectoryPath stringByAppendingPathComponent: myStrRelativeDestinationPath]]) {
 		myPpsState = EXIST;
 		myBActualRenaming = NO;
 	}
@@ -52,9 +50,6 @@
 		myBActualRenaming = YES;
 	}
 }
-
-
-
 
 #pragma mark ##Public_Methods##
 
@@ -103,8 +98,6 @@
 	return myStrCurrentDirectoryPath;
 }
 
-
-
 - (PathPairState) setDestinationLastPathComponent: (NSString *)strDLastPathComponent
 {
 	NSRange rngInvalidChar;
@@ -129,7 +122,6 @@
 	return myPpsState;
 }
 
-
 - (NSString *) absoluteDestinationPath
 {
 	if ([myStrRelativeDestinationPath length] == 0) {
@@ -153,7 +145,6 @@
 	myPpsState = NO_DESTINATION;
 }
 
-
 - (BOOL) setActualRenaming: (BOOL) bActualRenaming
 {
 	if (myPpsState == OK || myPpsState == SAME_EXCEPT_CASES) {
@@ -163,7 +154,6 @@
 		return myBActualRenaming = NO;
 	}
 }
-
 
 - (BOOL) actualRenaming
 {
@@ -180,12 +170,10 @@
 	myPpsState = INVALID_REGEXP;
 }
 
-
 - (BOOL) isFile
 {
 	return ![self isFolder];
 }
-
 
 - (BOOL) isFolder
 {
@@ -195,8 +183,6 @@
 	return bFol;
 }
 
-
-
 // This method synchronize move source path to destination path.
 - (BOOL) renameOldPathToNew
 {
@@ -205,10 +191,9 @@
 
 	if (myBActualRenaming == YES) {
 		if (myPpsState == OK) {
-			return [[NSFileManager defaultManager] movePath: strMp
-			                                         toPath: strTp
-																 handler: nil];
-
+			return [[NSFileManager defaultManager] moveItemAtPath: strMp
+														   toPath: strTp
+															error: nil];
 		}
 		else { // if (myPpsState == SAME_EXCEPT_CASES)
 			NSMutableString *mstrTempPath;
@@ -219,12 +204,12 @@
 				iAppend++;
 			} while ([[NSFileManager defaultManager] fileExistsAtPath: mstrTempPath]);
 			
-			if ([[NSFileManager defaultManager] movePath: strMp
-															  toPath: mstrTempPath
-															 handler: nil]) {
-				return [[NSFileManager defaultManager] movePath: mstrTempPath
-			                                            toPath: strTp
-															    	 handler: nil];
+			if ([[NSFileManager defaultManager] moveItemAtPath: strMp
+														toPath: mstrTempPath
+														 error: nil]) {
+				return [[NSFileManager defaultManager] moveItemAtPath: mstrTempPath
+															   toPath: strTp
+																error: nil];
 			}
 			return NO;
 		}
@@ -233,8 +218,6 @@
 		return NO;
 	}
 }
-
-
 
 #pragma mark # Compare Method
 
@@ -289,7 +272,6 @@
 }
 
 
-
 - (NSString *) description
 {
 	NSArray *aTemp = [NSArray arrayWithObjects: myStrCurrentDirectoryPath,
@@ -300,6 +282,5 @@
 															  nil];
 	return [aTemp description];
 }
-
 
 @end

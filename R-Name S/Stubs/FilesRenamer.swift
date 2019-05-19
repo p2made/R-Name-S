@@ -7,10 +7,10 @@
 //
 
 import Foundation
-import RenamedPathPair
-import RenamedPathPairContainer
-import StringsManager
-import PerlWrapper
+//import RenamedPathPair
+//import RenamedPathPairContainer
+//import StringsManager
+//import PerlWrapper
 
 class FilesRenamer: NSObject {
 

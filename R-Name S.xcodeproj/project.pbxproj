@@ -99,6 +99,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EBA597FD22910B61003154F4 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				EBC47987228A91A000DAF894 /* Definitions.swift */,
+				EBC47982228A91A000DAF894 /* ControllerDefinitions.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		EBB24C2A228A5F2400E03E18 = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +133,8 @@
 			children = (
 				EBB24C36228A5F2400E03E18 /* AppDelegate.swift */,
 				EBB24C38228A5F2400E03E18 /* ViewController.swift */,
+				EBC47985228A91A000DAF894 /* RNameController.swift */,
+				EBA597FD22910B61003154F4 /* Classes */,
 				EBB24C3D228A5F2700E03E18 /* Assets.xcassets */,
 				EBB24C3F228A5F2700E03E18 /* Main.storyboard */,
 				EBC47965228A913700DAF894 /* PerlWrapper */,
@@ -165,13 +176,10 @@
 		EBC4796A228A917100DAF894 /* Stubs */ = {
 			isa = PBXGroup;
 			children = (
-				EBC47987228A91A000DAF894 /* Definitions.swift */,
-				EBC47982228A91A000DAF894 /* ControllerDefinitions.swift */,
 				EBC47986228A91A000DAF894 /* BetterCompareNSString.swift */,
 				EBC47981228A91A000DAF894 /* FilesRenamer.swift */,
 				EBC47983228A91A000DAF894 /* RenamedPathPair.swift */,
 				EBC47980228A91A000DAF894 /* RenamedPathPairContainer.swift */,
-				EBC47985228A91A000DAF894 /* RNameController.swift */,
 				EBC4797F228A91A000DAF894 /* SequentialNumberChecker.swift */,
 				EBC47988228A91A000DAF894 /* StringsManager.swift */,
 				EBC47984228A91A000DAF894 /* TransparentDraggedWindow.swift */,

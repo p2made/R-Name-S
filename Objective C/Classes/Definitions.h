@@ -7,7 +7,6 @@
  *
  */
 
-
 typedef enum {
 	NO_DESTINATION = 0,
 	OK = 1,
@@ -23,8 +22,6 @@ typedef enum {
 #define MAX_FILENAME_LENGTH 255
 #define STRING_MADE_OF_INVALID_CHARS @"/"
 
-
-
 typedef enum {
 	NONE = 0,
 	ALPHABETIC = 1,
@@ -38,7 +35,6 @@ typedef enum {
 	DATE_CREATED = 9,
 	REVERSE_DATE_CREATED = 10
 } ViewOrder;
-
 
 typedef enum {
 	FIND_REPLACE = 0,
@@ -55,7 +51,3 @@ typedef enum {
 	CHANGE_EXTENSION,
 	REMOVE_EXTENSION
 } RenameingMethods;
-
-
-
-

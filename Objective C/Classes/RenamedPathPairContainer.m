@@ -8,9 +8,7 @@
 
 #import "RenamedPathPairContainer.h"
 
-
 @implementation RenamedPathPairContainer
-
 
 #pragma mark ## Private Methods ##
 
@@ -30,8 +28,6 @@
 	}
 	return NO;
 }
-
-
 
 #pragma mark ## Public Methods ##
 
@@ -57,7 +53,6 @@
 	return self;
 }
 
-
 - (void) dealloc
 {
 	[myMaViewOrder release];
@@ -69,7 +64,6 @@
 	
    [super dealloc];
 }
-
 
 - (void) setDelegate: (id)anObject
 {
@@ -84,14 +78,11 @@
 	return delegate;
 }
 
-
-
 - (unsigned) count
 {
-	return [myMaViewOrder count];
+	return (int)[myMaViewOrder count];
 }
-	
-	
+
 - (void) clearRenamedPathPairs
 {
 	NSNumber *numYes = [NSNumber numberWithBool: YES];
@@ -140,25 +131,21 @@
 	[myMaRenamingOrder addObjectsFromArray: maTempPairs];
 }
 
-
 - (RenamedPathPair *) pathPairAtViewIndex: (int)iIndex
 {
 	return [myMaViewOrder objectAtIndex: iIndex];
 }
-
 
 - (NSString *) sourceLastPathComponentAtViewIndex: (int)iIndex
 {
 	return [[myMaViewOrder objectAtIndex: iIndex] sourceLastPathComponent];
 }
 
-
 - (PathPairState) setDestinationLastPathComponent: (NSString *)strDLastPathComponent
 												  AtViewIndex: (int)iIndex
 {
 	return [[myMaViewOrder objectAtIndex: iIndex] setDestinationLastPathComponent: strDLastPathComponent];
 }
-
 
 - (BOOL) setActualRenaming: (BOOL)bActualRename AtViewIndex: (int)iIndex
 {
@@ -224,15 +211,10 @@
 	}
 }
 
-
-
 // For debug
 - (NSString *) description
 {
 	return [myMaViewOrder description];
 }
-
-
-
 
 @end

@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import BetterCompareNSString
+//import BetterCompareNSString
 
 class RenamedPathPair: NSObject {
 

@@ -6,8 +6,6 @@
 //  Copyright (c) 2002 Yoichi Tagaya. All rights reserved.
 //
 
-
-
 #import <Foundation/Foundation.h>
 #import "Definitions.h"
 #import "BetterCompareNSString.h"
@@ -56,8 +54,6 @@
 // and return YES if moving path is success, otherwise NO.
 - (BOOL) renameOldPathToNew;
 
-
-
 // These methods compare relative source paths
 - (NSComparisonResult) compare: (RenamedPathPair *)rppRight;
 - (NSComparisonResult) caseInsensitiveCompare: (RenamedPathPair *)rppRight;
@@ -70,10 +66,7 @@
 - (NSComparisonResult) compareDateCreated: (RenamedPathPair *)rppRight;
 - (NSComparisonResult) reverseCompareDateCreated: (RenamedPathPair *)rppRight;
 
-
-
 // For debug
 - (NSString *) description;
-
 
 @end

@@ -7,8 +7,8 @@
 //
 
 import Foundation
-import Definitions
-import RenamedPathPair
+//import Definitions
+//import RenamedPathPair
 
 class RenamedPathPairContainer: NSObject {
 
