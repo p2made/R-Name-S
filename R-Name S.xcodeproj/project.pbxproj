@@ -3,91 +3,42 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 90;
 	objects = {
 
-/* Begin PBXContainerItemProxy section */
-		EB04C9FC2E1ADFC400C9E0E9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EB04C9E22E1ADFC200C9E0E9 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EB04C9E92E1ADFC200C9E0E9;
-			remoteInfo = "R-Name S";
-		};
-		EB04CA062E1ADFC400C9E0E9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EB04C9E22E1ADFC200C9E0E9 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EB04C9E92E1ADFC200C9E0E9;
-			remoteInfo = "R-Name S";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		EB04C9EA2E1ADFC200C9E0E9 /* R-Name S.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "R-Name S.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EB04C9FB2E1ADFC400C9E0E9 /* R-Name STests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "R-Name STests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EB04CA052E1ADFC400C9E0E9 /* R-Name SUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "R-Name SUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		000000000000000000000120 /* R-Name S.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "R-Name S.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		EB04C9EC2E1ADFC200C9E0E9 /* R-Name S */ = {
+		000000000000000000000010 /* R-Name S */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "R-Name S";
-			sourceTree = "<group>";
-		};
-		EB04C9FE2E1ADFC400C9E0E9 /* R-Name STests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "R-Name STests";
-			sourceTree = "<group>";
-		};
-		EB04CA082E1ADFC400C9E0E9 /* R-Name SUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "R-Name SUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		EB04C9E72E1ADFC200C9E0E9 /* Frameworks */ = {
+		000000000000000130000000 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EB04C9F82E1ADFC400C9E0E9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EB04CA022E1ADFC400C9E0E9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		EB04C9E12E1ADFC200C9E0E9 = {
+		000000000000000000000001 = {
 			isa = PBXGroup;
 			children = (
-				EB04C9EC2E1ADFC200C9E0E9 /* R-Name S */,
-				EB04C9FE2E1ADFC400C9E0E9 /* R-Name STests */,
-				EB04CA082E1ADFC400C9E0E9 /* R-Name SUITests */,
-				EB04C9EB2E1ADFC200C9E0E9 /* Products */,
+				000000000000000000000010 /* R-Name S */,
+				000000000000000000000020 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		EB04C9EB2E1ADFC200C9E0E9 /* Products */ = {
+		000000000000000000000020 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EB04C9EA2E1ADFC200C9E0E9 /* R-Name S.app */,
-				EB04C9FB2E1ADFC400C9E0E9 /* R-Name STests.xctest */,
-				EB04CA052E1ADFC400C9E0E9 /* R-Name SUITests.xctest */,
+				000000000000000000000120 /* R-Name S.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,184 +46,80 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		EB04C9E92E1ADFC200C9E0E9 /* R-Name S */ = {
+		000000000000000100000000 /* R-Name S */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EB04CA0F2E1ADFC400C9E0E9 /* Build configuration list for PBXNativeTarget "R-Name S" */;
+			buildConfigurationList = 000000000000000110000000 /* Build configuration list for PBXNativeTarget "R-Name S" */;
 			buildPhases = (
-				EB04C9E62E1ADFC200C9E0E9 /* Sources */,
-				EB04C9E72E1ADFC200C9E0E9 /* Frameworks */,
-				EB04C9E82E1ADFC200C9E0E9 /* Resources */,
+				000000000000000120000000 /* Sources */,
+				000000000000000130000000 /* Frameworks */,
+				000000000000000140000000 /* Resources */,
 			);
 			buildRules = (
 			);
-			dependencies = (
-			);
 			fileSystemSynchronizedGroups = (
-				EB04C9EC2E1ADFC200C9E0E9 /* R-Name S */,
+				000000000000000000000010 /* R-Name S */,
 			);
 			name = "R-Name S";
-			packageProductDependencies = (
-			);
 			productName = "R-Name S";
-			productReference = EB04C9EA2E1ADFC200C9E0E9 /* R-Name S.app */;
+			productReference = 000000000000000000000120 /* R-Name S.app */;
 			productType = "com.apple.product-type.application";
-		};
-		EB04C9FA2E1ADFC400C9E0E9 /* R-Name STests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = EB04CA122E1ADFC400C9E0E9 /* Build configuration list for PBXNativeTarget "R-Name STests" */;
-			buildPhases = (
-				EB04C9F72E1ADFC400C9E0E9 /* Sources */,
-				EB04C9F82E1ADFC400C9E0E9 /* Frameworks */,
-				EB04C9F92E1ADFC400C9E0E9 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				EB04C9FD2E1ADFC400C9E0E9 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				EB04C9FE2E1ADFC400C9E0E9 /* R-Name STests */,
-			);
-			name = "R-Name STests";
-			packageProductDependencies = (
-			);
-			productName = "R-Name STests";
-			productReference = EB04C9FB2E1ADFC400C9E0E9 /* R-Name STests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		EB04CA042E1ADFC400C9E0E9 /* R-Name SUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = EB04CA152E1ADFC400C9E0E9 /* Build configuration list for PBXNativeTarget "R-Name SUITests" */;
-			buildPhases = (
-				EB04CA012E1ADFC400C9E0E9 /* Sources */,
-				EB04CA022E1ADFC400C9E0E9 /* Frameworks */,
-				EB04CA032E1ADFC400C9E0E9 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				EB04CA072E1ADFC400C9E0E9 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				EB04CA082E1ADFC400C9E0E9 /* R-Name SUITests */,
-			);
-			name = "R-Name SUITests";
-			packageProductDependencies = (
-			);
-			productName = "R-Name SUITests";
-			productReference = EB04CA052E1ADFC400C9E0E9 /* R-Name SUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		EB04C9E22E1ADFC200C9E0E9 /* Project object */ = {
+		000000000000000000000000 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1640;
-				LastUpgradeCheck = 1640;
+				LastSwiftUpdateCheck = 2630;
+				LastUpgradeCheck = 2700;
 				TargetAttributes = {
-					EB04C9E92E1ADFC200C9E0E9 = {
-						CreatedOnToolsVersion = 16.4;
-					};
-					EB04C9FA2E1ADFC400C9E0E9 = {
-						CreatedOnToolsVersion = 16.4;
-						TestTargetID = EB04C9E92E1ADFC200C9E0E9;
-					};
-					EB04CA042E1ADFC400C9E0E9 = {
-						CreatedOnToolsVersion = 16.4;
-						TestTargetID = EB04C9E92E1ADFC200C9E0E9;
+					000000000000000100000000 = {
+						CreatedOnToolsVersion = 26.3;
 					};
 				};
 			};
-			buildConfigurationList = EB04C9E52E1ADFC200C9E0E9 /* Build configuration list for PBXProject "R-Name S" */;
+			buildConfigurationList = 000000000000000010000000 /* Build configuration list for PBXProject "R-Name S" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = EB04C9E12E1ADFC200C9E0E9;
+			mainGroup = 000000000000000000000001;
 			minimizedProjectReferenceProxies = 1;
-			preferredProjectObjectVersion = 77;
-			productRefGroup = EB04C9EB2E1ADFC200C9E0E9 /* Products */;
+			preferredProjectObjectVersion = 90;
+			productRefGroup = 000000000000000000000020 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EB04C9E92E1ADFC200C9E0E9 /* R-Name S */,
-				EB04C9FA2E1ADFC400C9E0E9 /* R-Name STests */,
-				EB04CA042E1ADFC400C9E0E9 /* R-Name SUITests */,
+				000000000000000100000000 /* R-Name S */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		EB04C9E82E1ADFC200C9E0E9 /* Resources */ = {
+		000000000000000140000000 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EB04C9F92E1ADFC400C9E0E9 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EB04CA032E1ADFC400C9E0E9 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		EB04C9E62E1ADFC200C9E0E9 /* Sources */ = {
+		000000000000000120000000 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EB04C9F72E1ADFC400C9E0E9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EB04CA012E1ADFC400C9E0E9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		EB04C9FD2E1ADFC400C9E0E9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = EB04C9E92E1ADFC200C9E0E9 /* R-Name S */;
-			targetProxy = EB04C9FC2E1ADFC400C9E0E9 /* PBXContainerItemProxy */;
-		};
-		EB04CA072E1ADFC400C9E0E9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = EB04C9E92E1ADFC200C9E0E9 /* R-Name S */;
-			targetProxy = EB04CA062E1ADFC400C9E0E9 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin XCBuildConfiguration section */
-		EB04CA0D2E1ADFC400C9E0E9 /* Debug */ = {
+		000000000000000011000000 /* Debug configuration for PBXProject "R-Name S" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				APPLETVOS_DEPLOYMENT_TARGET = 27.0;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -303,8 +150,9 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = 866K66F75B;
+				DRIVERKIT_DEPLOYMENT_TARGET = 27.0;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -322,21 +170,26 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx;
+				PROJECT_UNIQUE_VALUE = QCK7R8DL;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				WATCHOS_DEPLOYMENT_TARGET = 27.0;
+				XROS_DEPLOYMENT_TARGET = 27.0;
 			};
 			name = Debug;
 		};
-		EB04CA0E2E1ADFC400C9E0E9 /* Release */ = {
+		000000000000000012000000 /* Release configuration for PBXProject "R-Name S" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				APPLETVOS_DEPLOYMENT_TARGET = 27.0;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -367,8 +220,9 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = 866K66F75B;
+				DRIVERKIT_DEPLOYMENT_TARGET = 27.0;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -380,188 +234,121 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				SDKROOT = macosx;
+				PROJECT_UNIQUE_VALUE = QCK7R8DL;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				WATCHOS_DEPLOYMENT_TARGET = 27.0;
+				XROS_DEPLOYMENT_TARGET = 27.0;
 			};
 			name = Release;
 		};
-		EB04CA102E1ADFC400C9E0E9 /* Debug */ = {
+		000000000000000111000000 /* Debug configuration for PBXNativeTarget "R-Name S" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = arm64;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "R-Name S/R_Name_S.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 866K66F75B;
+				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
-				EXCLUDED_ARCHS = "";
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readwrite;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "R-Name S";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
-				INFOPLIST_KEY_NSHumanReadableCopyright = "Pedro Plowman";
-				INFOPLIST_KEY_NSMainStoryboardFile = Main;
-				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 14.6;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "au.id.pedro.R-Name-S";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "app.rname.R-Name-S";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				REGISTER_APP_GROUPS = YES;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = macosx;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
-		EB04CA112E1ADFC400C9E0E9 /* Release */ = {
+		000000000000000112000000 /* Release configuration for PBXNativeTarget "R-Name S" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = arm64;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "R-Name S/R_Name_S.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 866K66F75B;
+				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readwrite;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "R-Name S";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
-				INFOPLIST_KEY_NSHumanReadableCopyright = "Pedro Plowman";
-				INFOPLIST_KEY_NSMainStoryboardFile = Main;
-				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 14.6;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "au.id.pedro.R-Name-S";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "app.rname.R-Name-S";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				REGISTER_APP_GROUPS = YES;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = macosx;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
-		EB04CA132E1ADFC400C9E0E9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 866K66F75B;
-				GENERATE_INFOPLIST_FILE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 15.5;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "au.id.pedro.R-Name-STests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/R-Name S.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/R-Name S";
-			};
-			name = Debug;
-		};
-		EB04CA142E1ADFC400C9E0E9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 866K66F75B;
-				GENERATE_INFOPLIST_FILE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 15.5;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "au.id.pedro.R-Name-STests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/R-Name S.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/R-Name S";
-			};
-			name = Release;
-		};
-		EB04CA162E1ADFC400C9E0E9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 866K66F75B;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "au.id.pedro.R-Name-SUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = "R-Name S";
-			};
-			name = Debug;
-		};
-		EB04CA172E1ADFC400C9E0E9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 866K66F75B;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "au.id.pedro.R-Name-SUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = "R-Name S";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EB04C9E52E1ADFC200C9E0E9 /* Build configuration list for PBXProject "R-Name S" */ = {
+		000000000000000010000000 /* Build configuration list for PBXProject "R-Name S" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EB04CA0D2E1ADFC400C9E0E9 /* Debug */,
-				EB04CA0E2E1ADFC400C9E0E9 /* Release */,
+				000000000000000011000000 /* Debug configuration for PBXProject "R-Name S" */,
+				000000000000000012000000 /* Release configuration for PBXProject "R-Name S" */,
 			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EB04CA0F2E1ADFC400C9E0E9 /* Build configuration list for PBXNativeTarget "R-Name S" */ = {
+		000000000000000110000000 /* Build configuration list for PBXNativeTarget "R-Name S" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EB04CA102E1ADFC400C9E0E9 /* Debug */,
-				EB04CA112E1ADFC400C9E0E9 /* Release */,
+				000000000000000111000000 /* Debug configuration for PBXNativeTarget "R-Name S" */,
+				000000000000000112000000 /* Release configuration for PBXNativeTarget "R-Name S" */,
 			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		EB04CA122E1ADFC400C9E0E9 /* Build configuration list for PBXNativeTarget "R-Name STests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				EB04CA132E1ADFC400C9E0E9 /* Debug */,
-				EB04CA142E1ADFC400C9E0E9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		EB04CA152E1ADFC400C9E0E9 /* Build configuration list for PBXNativeTarget "R-Name SUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				EB04CA162E1ADFC400C9E0E9 /* Debug */,
-				EB04CA172E1ADFC400C9E0E9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = EB04C9E22E1ADFC200C9E0E9 /* Project object */;
+	rootObject = 000000000000000000000000 /* Project object */;
 }

@@ -1,6 +1,0 @@
-/* Localized versions of Info.plist keys */
-
-CFBundleName = "R-Name";
-CFBundleShortVersionString = "R-Name version 3";
-CFBundleGetInfoString = "R-Name version 3, Copyright 2002-2003 Tagaya Yoichi.";
-NSHumanReadableCopyright = "Copyright 2002-2003 Tagaya Yoichi.";
