@@ -5,17 +5,21 @@
 #### 2018-05-18
 
 ## 0. About R-Name
+
 R-Name allows you to quickly rename multiple files and folders. R-Name has several ways to rename files: you can find and replace characters in the filename, add and delete characters to filename, make sequentially-numbered files, and more (see Section 5 for full details).
 
 ## 1. Requirements
+
 Mac OS X 10.2 and an HFS+ formatted volume.
 (If you have UFS volumes, don't use the character `/' in filenames.)
 
 ## 2. Known Bugs
-File comments will be destroyed.
-Custom icons of folders disappear if you rename the invisible "Icon" files in the folders.
+
+* File comments will be destroyed.
+* Custom icons of folders disappear if you rename the invisible "Icon" files in the folders.
 
 ## 3. Installation
+
 Move R-Name to the Applications folder or another location if you prefer.
 
 ## 4. How To Use
@@ -68,6 +72,7 @@ Example3: photo5.jpg, photo6.jpg, photo7.jpg (“First number” set to “5”)
 Example4: photo1.jpg, photo3.jpg, photo5.jpg (“Step value" set to “2”).
 
 **Tips**
+
 By dropping files one-by-one you can explicitly set the ordering of files for cases when it cannot be done from the sort menu.
 
 #### Add Characters at Beginning
@@ -145,8 +150,8 @@ Put an extension in a line.
 
 Use spaces as separators like this: “   ".
 
-
 ## 7. Version History
+
 ver3 [2003/7/1]
 The new icon.
 Disabled "Rename Now" when no items to rename are in the list.
@@ -207,13 +212,16 @@ ver1.0 [2002/4/9]
 First release.
 
 ## 8. License
+
 This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or any later version. This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details. (See the file named LICENSE.txt.)
 
 ## 9. Special Thanks
-Matt Anton for French localization # ouebmestre@syrius.org #  http://www.syrius.org/
-René Adrian for the great icon # ra@xmnr.net # http://www.xmnr.net/
-Roy McCoy for English correction
-Carsten Klapp for English correction
+
+* **Tagaya Yoichi** who created the original R-Name, & maintained it until 2003. His website is no longer online.
+* **Matt Anton** for French localization # ouebmestre@syrius.org #  http://www.syrius.org/
+* **René Adrian** for the great icon # ra@xmnr.net # http://www.xmnr.net/
+* **Roy McCoy** for English correction
+* **Carsten Klapp** for English correction
 
 ## 10. Regular Expression References
 
