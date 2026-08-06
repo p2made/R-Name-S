@@ -40,7 +40,8 @@ The “:” character in the list(11) shows folder hierarchy.
 
 ## 5. Kinds Of Renaming
 
-Find and Replace
+### Find and Replace
+
 You can find and replace characters in filenames with this method.
 
 If “Replace all found in filename” is checked, R-Name will replace all instances of the characters that you set to find.
