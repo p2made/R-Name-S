@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+
+<svg
+   width="1024"
+   height="1024"
+   viewBox="0 0 40.96 40.96"
+   version="1.1"
+   id="svg20"
+   sodipodi:docname="swift-svgrepo-com.svg"
+   inkscape:version="1.2.2 (b0a84865, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <sodipodi:namedview
+     id="namedview22"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="0.58007812"
+     inkscape:cx="512"
+     inkscape:cy="512"
+     inkscape:window-width="1440"
+     inkscape:window-height="814"
+     inkscape:window-x="0"
+     inkscape:window-y="30"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg20" />
+  <defs
+     id="defs14">
+    <linearGradient
+       id="a"
+       x1="-134.494"
+       y1="-171.82001"
+       x2="-134.49699"
+       y2="-171.89"
+       gradientTransform="matrix(240,0,0,-205.6,32295,-35312.585)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0"
+         stop-color="#f88535"
+         id="stop9" />
+      <stop
+         offset="1"
+         stop-color="#fd2221"
+         id="stop11" />
+    </linearGradient>
+  </defs>
+  <title
+     id="title16">file_type_swift</title>
+  <path
+     d="m 25.485053,2.9365428 c 0,0 9.094277,5.19882 11.474266,13.4578342 2.144477,7.460322 0.42714,11.020796 0.42714,11.020796 a 13.040934,13.040934 0 0 1 2.548211,4.095863 7.058049,7.058049 0 0 1 0.424215,6.513884 c 0,0 -0.146281,-3.042641 -4.680985,-3.67311 -4.155838,-0.585124 -5.66692,3.461003 -13.604116,3.264987 A 26.966867,26.966867 0 0 1 1.0748019e-5,25.386258 C 3.8779149,27.501479 8.9582474,30.785483 15.284892,30.280815 c 6.326644,-0.504669 7.647561,-2.448741 7.647561,-2.448741 A 97.861861,97.861861 0 0 1 4.2289888,8.255313 C 9.2025364,12.417002 21.522305,20.699421 21.235595,20.488777 A 110.91889,110.91889 0 0 1 8.9114375,6.2029933 c 0,0 18.4840425,15.1971127 19.9717185,15.1005677 C 29.49461,20.044084 32.655738,13.524348 25.48359,2.93508 Z"
+     style="fill:url(#a);stroke-width:0.999999"
+     id="path18" />
+  <metadata
+     id="metadata182">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>file_type_swift</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>
