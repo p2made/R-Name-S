@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="1024" height="1024" viewBox="0 0 1024 1024">
+  <title>Correction fluid bottle and brush</title>
+  <desc>Editable vector master for the R-Name app icon. The bottle and brush are separate named groups on a transparent square canvas.</desc>
+
+  <defs>
+    <linearGradient id="bodyFill" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#bcc2c8"/>
+      <stop offset="0.17" stop-color="#f7f8f8"/>
+      <stop offset="0.55" stop-color="#ffffff"/>
+      <stop offset="0.82" stop-color="#e3e6e8"/>
+      <stop offset="1" stop-color="#a9b0b7"/>
+    </linearGradient>
+    <linearGradient id="shoulderFill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.55" stop-color="#e9ecee"/>
+      <stop offset="1" stop-color="#aeb5bb"/>
+    </linearGradient>
+    <linearGradient id="neckFill" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#aab1b7"/>
+      <stop offset="0.22" stop-color="#f6f7f7"/>
+      <stop offset="0.62" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#a8afb5"/>
+    </linearGradient>
+    <linearGradient id="labelFill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#173a82"/>
+      <stop offset="1" stop-color="#081f59"/>
+    </linearGradient>
+    <linearGradient id="capFill" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#9aa1a8"/>
+      <stop offset="0.18" stop-color="#f4f5f5"/>
+      <stop offset="0.72" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#abb1b7"/>
+    </linearGradient>
+    <linearGradient id="brushMetal" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f5f6f7"/>
+      <stop offset="0.42" stop-color="#a8afb6"/>
+      <stop offset="0.63" stop-color="#eef0f1"/>
+      <stop offset="1" stop-color="#7c858e"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Optional shadow: hide this group before importing flat artwork into Icon Composer. -->
+  <g id="00-reference-shadow" opacity="0.18">
+    <ellipse cx="451" cy="855" rx="250" ry="54" fill="#071226"/>
+    <ellipse cx="719" cy="807" rx="208" ry="39" fill="#071226" transform="rotate(-18 719 807)"/>
+  </g>
+
+  <!-- Bottle artwork. -->
+  <g id="10-bottle">
+    <!-- Main cylindrical body -->
+    <path id="bottle-body"
+          d="M246 347
+             C246 302 282 276 327 258
+             L327 226
+             L515 226
+             L515 258
+             C561 276 596 302 596 347
+             L596 762
+             C596 824 554 858 493 871
+             C447 881 394 881 348 871
+             C287 858 246 824 246 762 Z"
+          fill="url(#bodyFill)" stroke="#27313a" stroke-width="13" stroke-linejoin="round"/>
+
+    <!-- Shoulder volume -->
+    <path id="bottle-shoulders"
+          d="M258 344
+             C258 313 290 291 342 274
+             L342 238
+             L500 238
+             L500 274
+             C551 291 584 313 584 344
+             C584 390 513 420 421 420
+             C329 420 258 390 258 344 Z"
+          fill="url(#shoulderFill)" stroke="#6c747b" stroke-width="5"/>
+
+    <!-- Neck -->
+    <path id="bottle-neck"
+          d="M344 117
+             C344 91 378 75 421 75
+             C464 75 498 91 498 117
+             L498 257
+             C498 281 464 297 421 297
+             C378 297 344 281 344 257 Z"
+          fill="url(#neckFill)" stroke="#27313a" stroke-width="11"/>
+
+    <!-- Open mouth -->
+    <ellipse cx="421" cy="117" rx="77" ry="42" fill="#c8cdd1" stroke="#27313a" stroke-width="11"/>
+    <ellipse cx="421" cy="113" rx="53" ry="25" fill="#59626a"/>
+    <ellipse cx="421" cy="108" rx="40" ry="15" fill="#20272d"/>
+
+    <!-- Thread rings -->
+    <path d="M340 151 C378 173 464 173 502 151" fill="none" stroke="#8c949a" stroke-width="12" stroke-linecap="round"/>
+    <path d="M340 184 C378 206 464 206 502 184" fill="none" stroke="#8c949a" stroke-width="12" stroke-linecap="round"/>
+    <path d="M344 217 C381 238 461 238 498 217" fill="none" stroke="#8c949a" stroke-width="12" stroke-linecap="round"/>
+
+    <!-- Blank label, ready for your own mark or colour treatment -->
+    <path id="bottle-label"
+          d="M258 443
+             C348 474 494 474 584 443
+             L584 737
+             C494 768 348 768 258 737 Z"
+          fill="url(#labelFill)" stroke="#0b1b39" stroke-width="7"/>
+
+    <!-- Red accent inherited from the historical icon, deliberately text-free -->
+    <path id="label-accent"
+          d="M275 491
+             C337 456 468 452 552 480
+             C577 489 585 511 574 535
+             C559 566 527 574 491 562
+             C418 538 352 542 292 566
+             C270 548 263 517 275 491 Z"
+          fill="#c72b37"/>
+
+    <!-- Small-scale highlights -->
+    <path d="M290 379 C302 359 321 346 344 336 L344 814 C316 805 294 785 290 754 Z"
+          fill="#ffffff" opacity="0.22"/>
+    <path d="M546 388 C560 375 571 361 580 343 L580 756 C577 785 559 807 538 818 Z"
+          fill="#26323d" opacity="0.12"/>
+  </g>
+
+  <!-- Brush and detached cap. Rotate, move, or hide this group independently. -->
+  <g id="20-brush" transform="rotate(-18 690 727)">
+    <!-- Cap body -->
+    <path id="cap-body"
+          d="M666 555
+             L864 555
+             C901 555 927 584 927 621
+             L927 685
+             C927 722 901 751 864 751
+             L666 751 Z"
+          fill="url(#capFill)" stroke="#27313a" stroke-width="13" stroke-linejoin="round"/>
+
+    <!-- Cap ribs -->
+    <path d="M744 569 L744 737 M782 569 L782 737 M820 569 L820 737 M858 569 L858 737"
+          stroke="#c8cdd1" stroke-width="12"/>
+
+    <!-- Cap opening -->
+    <ellipse cx="666" cy="653" rx="76" ry="98" fill="#c7ccd0" stroke="#27313a" stroke-width="13"/>
+    <ellipse cx="666" cy="653" rx="49" ry="68" fill="#eef0f1" stroke="#9fa6ac" stroke-width="9"/>
+    <ellipse cx="666" cy="653" rx="29" ry="47" fill="#a5adb4"/>
+
+    <!-- Brush stem -->
+    <path d="M665 653 L343 653" fill="none" stroke="#737c84" stroke-width="32" stroke-linecap="round"/>
+    <path d="M656 643 L355 643" fill="none" stroke="#eef0f1" stroke-width="9" stroke-linecap="round" opacity="0.85"/>
+
+    <!-- Brush ferrule -->
+    <path d="M355 623 L265 630 L265 676 L355 683 Z"
+          fill="url(#brushMetal)" stroke="#444d55" stroke-width="7" stroke-linejoin="round"/>
+
+    <!-- White correction-fluid-loaded bristles -->
+    <path d="M267 629
+             C225 625 181 635 133 654
+             C181 676 225 684 267 676 Z"
+          fill="#f8f9f9" stroke="#5b646c" stroke-width="7" stroke-linejoin="round"/>
+    <path d="M246 643 C211 644 181 652 153 656" fill="none" stroke="#c8cdd1" stroke-width="5" stroke-linecap="round"/>
+    <path d="M249 662 C211 664 183 660 154 656" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round"/>
+  </g>
+</svg>
