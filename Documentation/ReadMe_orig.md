@@ -247,14 +247,14 @@ This program is free software; you can redistribute it and/or modify it under th
 
 There are some websites that show how to use regular expression, such as:
 
-Perl Regular Expression Tutorial <http://www.english.uga.edu/humcomp/perl/regex2a.html>
-    in English@UGA <http://www.english.uga.edu/>
+Perl Regular Expression Tutorial [http://www.english.uga.edu/humcomp/perl/regex2a.html](http://www.english.uga.edu/humcomp/perl/regex2a.html),
+in English@UGA [http://www.english.uga.edu/](http://www.english.uga.edu/)
 
-Perl Regular Expression Quick Reference 1.0.2 <http://www.erudil.com/preqr.pdf>
-    in Erudil - Stephen B. Jenkins <http://www.erudil.com/>
+Perl Regular Expression Quick Reference 1.0.2 [http://www.erudil.com/preqr.pdf](http://www.erudil.com/preqr.pdf),
+in Erudil - Stephen B. Jenkins [http://www.erudil.com/](http://www.erudil.com/)
 
-A Tao of Regular Expressions <http://sitescooper.org/tao_regexps.html>
-    in Sitescooper <http://sitescooper.org/>
+A Tao of Regular Expressions [http://sitescooper.org/tao_regexps.html](http://sitescooper.org/tao_regexps.html),
+in Sitescooper [http://sitescooper.org/](http://sitescooper.org/)
 
 * Copyright © 2002-2003 Tagaya Yoichi, All Rights Reserved
 * e-mail: tayo@tulip.sannet.ne.jp

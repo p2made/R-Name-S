@@ -15,8 +15,6 @@ Implemented operations include find/replace (plain text or regular expression), 
 
 Open `R-Name S.xcodeproj` in Xcode and run the `R-Name S` scheme. The current target is an Apple Silicon (`arm64`) application for macOS 14 or later. The app sandbox permits read/write access only to files and folders explicitly selected or dropped by the user.
 
-The `z_gitignore` folder is intentionally excluded from Git. It retains historical Objective-C sources, the incomplete earlier Swift conversion, Interface Builder files, and other development references.
-
 ### Steps
 
 1. Clone R-Name as a Swift application leaving the whole application design alone.
@@ -32,9 +30,10 @@ In keeping with the spirit of Yoichi Tagaya's work, R-Name S will be donationwar
 - Operation history.
 - Saved operations.
 - Name conflict resolution.
+- Rename by data file.
 
-### [Original R-Name Usage Guide](./Documentation/Usage.md)
+### [Original R-Name Usage Guide](./Documentation/ReadMe_orig.md)
 
 The linked guide documents the historical application and remains useful as a feature-parity reference; screenshots, system requirements, Perl-regex notes, and some preferences do not describe the current SwiftUI build.
 
-Copyright (c) 2018 Pedro Plowman (as pSquared/p2)
+Copyright (c) 2018-2026 Pedro Plowman (as pSquared/p2)
