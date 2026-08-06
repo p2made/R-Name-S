@@ -10,15 +10,22 @@ struct RNameSApp: App {
     var body: some Scene {
         WindowGroup("R-Name S") { ContentView().environmentObject(model) }
             .defaultSize(width: 980, height: 650)
+            .windowResizability(.contentMinSize)
+            .commands {
+                CommandGroup(after: .newItem) {
+                    Button("Add Files or Folders…") { model.chooseFiles() }
+                        .keyboardShortcut("o")
+                }
+            }
         Settings { SettingsView().environmentObject(model) }
     }
 }
 
 enum OperationKind: String, CaseIterable, Identifiable {
-    case findReplace = "Find & Replace"
-    case sequence = "Sequential Number"
+    case findReplace = "Find and Replace"
+    case sequence = "Number Sequentially"
     case changeCase = "Change Case"
-    case prefixSuffix = "Add Text"
+    case prefixSuffix = "Add Characters"
     case removeEdge = "Remove Characters"
     case extensionChange = "Change Extension"
     var id: String { rawValue }
@@ -43,40 +50,45 @@ enum SortOrder: String, CaseIterable, Identifiable {
 @MainActor
 final class RenameViewModel: ObservableObject {
     @Published var items: [RenameItem] = []
-    @Published var kind: OperationKind = .findReplace { didSet { refreshPreview() } }
+    @Published var kind: OperationKind = .findReplace { didSet { invalidatePreview() } }
     @Published var status = "Drop files here or click Add…"
+    @Published var includeFiles = true
     @Published var includeFolderContents = false
     @Published var includeFolders = false
     @Published var sortOrder: SortOrder = .none { didSet { sortItems() } }
+    @Published private(set) var hasPreview = false
+    @Published private(set) var previewIsValid = false
+    @Published private(set) var progress = 0.0
 
-    @Published var find = "" { didSet { refreshPreview() } }
-    @Published var replacement = "" { didSet { refreshPreview() } }
-    @Published var useRegex = false { didSet { refreshPreview() } }
-    @Published var caseInsensitive = false { didSet { refreshPreview() } }
-    @Published var replaceAll = true { didSet { refreshPreview() } }
-    @Published var preserveExtension = true { didSet { refreshPreview() } }
+    @Published var find = "" { didSet { invalidatePreview() } }
+    @Published var replacement = "" { didSet { invalidatePreview() } }
+    @Published var useRegex = false { didSet { invalidatePreview() } }
+    @Published var caseInsensitive = false { didSet { invalidatePreview() } }
+    @Published var replaceAll = true { didSet { invalidatePreview() } }
+    @Published var preserveExtension = true { didSet { invalidatePreview() } }
 
-    @Published var prefix = "" { didSet { refreshPreview() } }
-    @Published var suffix = "" { didSet { refreshPreview() } }
-    @Published var start = 1 { didSet { refreshPreview() } }
-    @Published var step = 1 { didSet { refreshPreview() } }
-    @Published var digits = 1 { didSet { refreshPreview() } }
-    @Published var sameDigits = false { didSet { refreshPreview() } }
+    @Published var prefix = "" { didSet { invalidatePreview() } }
+    @Published var suffix = "" { didSet { invalidatePreview() } }
+    @Published var start = 1 { didSet { invalidatePreview() } }
+    @Published var step = 1 { didSet { invalidatePreview() } }
+    @Published var digits = 1 { didSet { invalidatePreview() } }
+    @Published var sameDigits = false { didSet { invalidatePreview() } }
 
-    @Published var letterCase: LetterCase = .lowercase { didSet { refreshPreview() } }
-    @Published var addPosition = 0 { didSet { refreshPreview() } }
-    @Published var textToAdd = "" { didSet { refreshPreview() } }
-    @Published var removeEdge: RemoveEdge = .beginning { didSet { refreshPreview() } }
-    @Published var removeCount = 1 { didSet { refreshPreview() } }
-    @Published var removeMode = 0 { didSet { refreshPreview() } }
-    @Published var rangeStart = 0 { didSet { refreshPreview() } }
-    @Published var rangeCount = 1 { didSet { refreshPreview() } }
-    @Published var rangeFromEnd = false { didSet { refreshPreview() } }
-    @Published var extensionMode = 0 { didSet { refreshPreview() } }
-    @Published var extensionText = "" { didSet { refreshPreview() } }
+    @Published var letterCase: LetterCase = .lowercase { didSet { invalidatePreview() } }
+    @Published var addPosition = 0 { didSet { invalidatePreview() } }
+    @Published var textToAdd = "" { didSet { invalidatePreview() } }
+    @Published var removeEdge: RemoveEdge = .beginning { didSet { invalidatePreview() } }
+    @Published var removeCount = 1 { didSet { invalidatePreview() } }
+    @Published var removeMode = 0 { didSet { invalidatePreview() } }
+    @Published var rangeStart = 0 { didSet { invalidatePreview() } }
+    @Published var rangeCount = 1 { didSet { invalidatePreview() } }
+    @Published var rangeFromEnd = false { didSet { invalidatePreview() } }
+    @Published var extensionMode = 0 { didSet { invalidatePreview() } }
+    @Published var extensionText = "" { didSet { invalidatePreview() } }
 
     var issues: [RenameIssue] { RenamePlanner.validate(items) }
     var enabledChangeCount: Int { items.filter { $0.isEnabled && $0.source.lastPathComponent != $0.destinationName }.count }
+    var canRename: Bool { previewIsValid && enabledChangeCount > 0 && issues.isEmpty }
 
     func chooseFiles() {
         let panel = NSOpenPanel()
@@ -97,10 +109,10 @@ final class RenameViewModel: ObservableObject {
                 if let enumerator = fm.enumerator(at: url, includingPropertiesForKeys: [.isDirectoryKey, .isHiddenKey], options: [.skipsHiddenFiles, .skipsPackageDescendants]) {
                     for case let child as URL in enumerator {
                         let directory = (try? child.resourceValues(forKeys: [.isDirectoryKey]).isDirectory) ?? false
-                        if !directory { discovered.append(child) }
+                        if includeFiles && !directory { discovered.append(child) }
                     }
                 }
-            } else if !isDirectory.boolValue || includeFolders {
+            } else if (!isDirectory.boolValue && includeFiles) || (isDirectory.boolValue && includeFolders) {
                 discovered.append(url)
             }
         }
@@ -109,23 +121,58 @@ final class RenameViewModel: ObservableObject {
         sortItems()
     }
 
-    func refreshPreview() {
+    func invalidatePreview() {
+        hasPreview = false
+        previewIsValid = false
+        progress = 0
+        for index in items.indices {
+            items[index].destinationName = items[index].source.lastPathComponent
+        }
+        status = items.isEmpty
+            ? "Drop files here or choose File > Add Files or Folders…"
+            : "\(items.count) item\(items.count == 1 ? "" : "s") awaiting preview"
+    }
+
+    func showNewNames() {
+        guard !items.isEmpty else {
+            invalidatePreview()
+            return
+        }
+
         let operation = currentOperation
         let count = items.count
+        var proposed = items
         for index in items.indices {
             do {
-                items[index].destinationName = try operation.renamed(items[index].source.lastPathComponent, sequenceIndex: index, sequenceCount: count)
+                proposed[index].destinationName = try operation.renamed(items[index].source.lastPathComponent, sequenceIndex: index, sequenceCount: count)
             } catch {
-                items[index].destinationName = items[index].source.lastPathComponent
+                hasPreview = false
+                previewIsValid = false
                 status = error.localizedDescription
+                NSSound.beep()
+                return
             }
         }
-        if let issue = issues.first { status = issue.localizedDescription }
-        else if items.isEmpty { status = "Drop files here or click Add…" }
-        else { status = "\(enabledChangeCount) item\(enabledChangeCount == 1 ? "" : "s") ready to rename" }
+
+        items = proposed
+        hasPreview = true
+        if let issue = issues.first {
+            previewIsValid = false
+            status = issue.localizedDescription
+            NSSound.beep()
+        } else {
+            previewIsValid = true
+            status = "\(enabledChangeCount) item\(enabledChangeCount == 1 ? "" : "s") ready to rename"
+        }
+    }
+
+    func clearItems() {
+        items.removeAll()
+        invalidatePreview()
     }
 
     func rename() {
+        guard canRename else { return }
         do {
             try RenamePlanner.execute(items)
             let renamedCount = enabledChangeCount
@@ -133,7 +180,12 @@ final class RenameViewModel: ObservableObject {
                 guard item.isEnabled else { return item }
                 return RenameItem(id: item.id, source: item.destination, isEnabled: item.isEnabled)
             }
-            refreshPreview()
+            hasPreview = false
+            previewIsValid = false
+            progress = 1
+            for index in items.indices {
+                items[index].destinationName = items[index].source.lastPathComponent
+            }
             status = "Renamed \(renamedCount) item\(renamedCount == 1 ? "" : "s")."
         } catch {
             status = error.localizedDescription
@@ -180,7 +232,7 @@ final class RenameViewModel: ObservableObject {
                 return ascending ? left < right : left > right
             }
         }
-        refreshPreview()
+        invalidatePreview()
     }
 
     private var currentOperation: RenameOperation {
@@ -204,60 +256,141 @@ final class RenameViewModel: ObservableObject {
 
 struct ContentView: View {
     @EnvironmentObject private var model: RenameViewModel
+    private let controlsHeight: CGFloat = 360
+    private let actionColumnWidth: CGFloat = 230
 
     var body: some View {
-        VStack(spacing: 0) {
-            HStack {
-                Picker("Method", selection: $model.kind) {
-                    ForEach(OperationKind.allCases) { Text($0.rawValue).tag($0) }
-                }.frame(width: 300)
-                Spacer()
-                Menu {
-                    Picker("Sort", selection: $model.sortOrder) {
-                        ForEach(SortOrder.allCases) { Text($0.rawValue).tag($0) }
+        VStack(spacing: 14) {
+            HStack(alignment: .top, spacing: 18) {
+                VStack(spacing: 10) {
+                    Picker("Rename operation", selection: $model.kind) {
+                        ForEach(OperationKind.allCases) { operation in
+                            Text(operation.rawValue).tag(operation)
+                        }
                     }
-                } label: {
-                    Label("Sort", systemImage: "arrow.up.arrow.down")
-                }
-                Button("Add…") { model.chooseFiles() }.keyboardShortcut("o")
-                Button("Clear") { model.items.removeAll(); model.refreshPreview() }.disabled(model.items.isEmpty)
-                Button("Rename") { model.rename() }
-                    .buttonStyle(.borderedProminent)
-                    .keyboardShortcut(.return, modifiers: [.command])
-                    .disabled(model.enabledChangeCount == 0 || !model.issues.isEmpty)
-            }.padding()
+                    .labelsHidden()
+                    .pickerStyle(.menu)
+                    .frame(maxWidth: .infinity)
 
-            Divider()
-            OperationEditor().padding()
-            Divider()
-
-            Table($model.items) {
-                TableColumn("Use") { $item in Toggle("", isOn: $item.isEnabled).labelsHidden() }.width(40)
-                TableColumn("Current Name") { $item in Text(item.source.lastPathComponent).lineLimit(1) }
-                TableColumn("New Name") { $item in
-                    Text(item.destinationName)
-                        .foregroundStyle(item.destinationName == item.source.lastPathComponent ? .secondary : .primary)
-                        .lineLimit(1)
+                    GroupBox("Settings") {
+                        OperationEditor()
+                            .padding(.top, 4)
+                            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
+                    }
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
                 }
-                TableColumn("Folder") { $item in Text(item.source.deletingLastPathComponent().path).foregroundStyle(.secondary).lineLimit(1) }
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+
+                ActionColumn()
+                    .frame(width: actionColumnWidth, height: controlsHeight)
             }
-            .overlay {
-                if model.items.isEmpty {
-                    ContentUnavailableView("Add files to begin", systemImage: "arrow.down.doc", description: Text("Drop files into this window or use Add…"))
-                }
-            }
-            .dropDestination(for: URL.self) { urls, _ in model.add(urls: urls); return true }
+            .frame(height: controlsHeight)
 
-            Divider()
-            HStack {
-                Image(systemName: model.issues.isEmpty ? "checkmark.circle" : "exclamationmark.triangle.fill")
-                    .foregroundStyle(model.issues.isEmpty ? Color.secondary : Color.orange)
-                Text(model.status).lineLimit(1)
-                Spacer()
-                Text("\(model.items.count) total").foregroundStyle(.secondary)
-            }.padding(10)
+            RenameItemsTable()
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
         }
-        .frame(minWidth: 760, minHeight: 500)
+        .padding(18)
+        .frame(minWidth: 820, minHeight: 580)
+        .background(WindowFrameAutosave(name: "RNameSMainWindow"))
+        .dropDestination(for: URL.self) { urls, _ in
+            model.add(urls: urls)
+            return true
+        }
+    }
+}
+
+struct ActionColumn: View {
+    @EnvironmentObject private var model: RenameViewModel
+
+    var body: some View {
+        VStack(spacing: 12) {
+            GroupBox("Add to List") {
+                VStack(alignment: .leading, spacing: 9) {
+                    Toggle("Files", isOn: $model.includeFiles)
+                    Toggle("Folders", isOn: $model.includeFolders)
+                    Toggle("Recurse Folder", isOn: $model.includeFolderContents)
+                }
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .padding(.vertical, 2)
+            }
+
+            Spacer(minLength: 12)
+
+            Button("Show New Names") { model.showNewNames() }
+                .buttonStyle(.borderedProminent)
+                .controlSize(.large)
+                .frame(maxWidth: .infinity)
+                .disabled(model.items.isEmpty)
+
+            Button("Clear List") { model.clearItems() }
+                .controlSize(.large)
+                .frame(maxWidth: .infinity)
+                .disabled(model.items.isEmpty)
+
+            Button("Rename Now") { model.rename() }
+                .controlSize(.large)
+                .frame(maxWidth: .infinity)
+                .keyboardShortcut(.return, modifiers: [.command])
+                .disabled(!model.canRename)
+
+            Spacer(minLength: 4)
+
+            Text(model.status)
+                .font(.caption)
+                .foregroundStyle(model.previewIsValid || model.items.isEmpty ? .secondary : .primary)
+                .lineLimit(2)
+                .frame(maxWidth: .infinity, alignment: .leading)
+
+            ProgressView(value: model.progress, total: 1)
+                .progressViewStyle(.linear)
+        }
+    }
+}
+
+struct RenameItemsTable: View {
+    @EnvironmentObject private var model: RenameViewModel
+
+    var body: some View {
+        Table($model.items) {
+            TableColumn("") { $item in
+                HStack(spacing: 6) {
+                    Toggle("", isOn: $item.isEnabled)
+                        .labelsHidden()
+                    Text(rowNumber(for: item))
+                        .monospacedDigit()
+                        .foregroundStyle(.secondary)
+                }
+            }
+            .width(min: 58, ideal: 58, max: 58)
+
+            TableColumn("Old") { $item in
+                Text(item.source.path)
+                    .lineLimit(1)
+                    .truncationMode(.middle)
+            }
+
+            TableColumn("New") { $item in
+                Text(model.hasPreview ? item.destination.path : "")
+                    .lineLimit(1)
+                    .truncationMode(.middle)
+                    .foregroundStyle(item.destinationName == item.source.lastPathComponent ? .secondary : .primary)
+            }
+        }
+        .tableStyle(.inset(alternatesRowBackgrounds: true))
+        .overlay {
+            if model.items.isEmpty {
+                ContentUnavailableView(
+                    "Add files to begin",
+                    systemImage: "arrow.down.doc",
+                    description: Text("Drop files or folders into this window, or press ⌘O")
+                )
+            }
+        }
+    }
+
+    private func rowNumber(for item: RenameItem) -> String {
+        guard let index = model.items.firstIndex(where: { $0.id == item.id }) else { return "" }
+        return String(index + 1)
     }
 }
 
@@ -265,72 +398,148 @@ struct OperationEditor: View {
     @EnvironmentObject private var model: RenameViewModel
 
     var body: some View {
-        Group {
+        VStack(alignment: .leading, spacing: 12) {
             switch model.kind {
             case .findReplace:
-                HStack {
-                    TextField("Find", text: $model.find)
-                    Image(systemName: "arrow.right")
-                    TextField("Replace with", text: $model.replacement)
-                    Toggle("Regex", isOn: $model.useRegex)
-                    Toggle("Ignore case", isOn: $model.caseInsensitive)
-                    Toggle("All", isOn: $model.replaceAll)
-                    PreserveExtensionToggle()
+                Grid(alignment: .leading, horizontalSpacing: 10, verticalSpacing: 10) {
+                    GridRow {
+                        FormLabel("Find:")
+                        TextField("", text: $model.find)
+                    }
+                    GridRow {
+                        FormLabel("Replace:")
+                        TextField("", text: $model.replacement)
+                    }
                 }
+                VStack(alignment: .leading, spacing: 8) {
+                    Toggle("Case insensitive", isOn: $model.caseInsensitive)
+                    Toggle("Replace all found in filename", isOn: $model.replaceAll)
+                    PreserveExtensionToggle()
+                    Toggle("Regular expression", isOn: $model.useRegex)
+                }
+                .padding(.leading, 105)
+
             case .sequence:
-                HStack {
-                    TextField("Prefix", text: $model.prefix)
-                    TextField("Suffix", text: $model.suffix)
-                    Stepper("Start: \(model.start)", value: $model.start)
-                    Stepper("Step: \(model.step)", value: $model.step)
-                    Stepper("Digits: \(model.digits)", value: $model.digits, in: 1...12)
+                Grid(alignment: .leading, horizontalSpacing: 10, verticalSpacing: 10) {
+                    GridRow { FormLabel("Prefix:"); TextField("", text: $model.prefix) }
+                    GridRow { FormLabel("Suffix:"); TextField("", text: $model.suffix) }
+                    GridRow {
+                        FormLabel("Numbers:")
+                        HStack(spacing: 16) {
+                            Stepper("First: \(model.start)", value: $model.start)
+                            Stepper("Step: \(model.step)", value: $model.step)
+                            Stepper("Digits: \(model.digits)", value: $model.digits, in: 1...12)
+                        }
+                    }
+                    GridRow {
+                        FormLabel("Sort:")
+                        Picker("", selection: $model.sortOrder) {
+                            ForEach(SortOrder.allCases) { Text($0.rawValue).tag($0) }
+                        }
+                        .labelsHidden()
+                    }
+                }
+                HStack(spacing: 18) {
                     Toggle("Same digits", isOn: $model.sameDigits)
                     PreserveExtensionToggle()
                     if !model.preserveExtension {
-                        TextField("Extension", text: $model.extensionText).frame(width: 110)
+                        TextField("Extension", text: $model.extensionText).frame(maxWidth: 180)
                     }
                 }
+                .padding(.leading, 105)
+
             case .changeCase:
-                HStack {
-                    Picker("Case", selection: $model.letterCase) { ForEach(LetterCase.allCases, id: \.self) { Text($0.rawValue).tag($0) } }
-                    PreserveExtensionToggle()
-                    Spacer()
-                }
-            case .prefixSuffix:
-                HStack {
-                    Picker("Position", selection: $model.addPosition) {
-                        Text("Beginning").tag(0); Text("End").tag(1); Text("Before Extension").tag(2)
+                Grid(alignment: .leading, horizontalSpacing: 10, verticalSpacing: 12) {
+                    GridRow {
+                        FormLabel("Change to:")
+                        Picker("", selection: $model.letterCase) {
+                            ForEach(LetterCase.allCases, id: \.self) { Text($0.rawValue).tag($0) }
+                        }
+                        .labelsHidden()
                     }
-                    TextField("Text to add", text: $model.textToAdd)
+                    GridRow { Color.clear.frame(width: 95, height: 1); PreserveExtensionToggle() }
                 }
+
+            case .prefixSuffix:
+                Grid(alignment: .leading, horizontalSpacing: 10, verticalSpacing: 12) {
+                    GridRow {
+                        FormLabel("Position:")
+                        Picker("", selection: $model.addPosition) {
+                            Text("Beginning").tag(0)
+                            Text("End").tag(1)
+                            Text("Before Extension").tag(2)
+                        }
+                        .labelsHidden()
+                    }
+                    GridRow { FormLabel("Characters:"); TextField("", text: $model.textToAdd) }
+                }
+
             case .removeEdge:
-                HStack {
-                    Picker("Mode", selection: $model.removeMode) {
-                        Text("From Edge").tag(0)
-                        Text("At Range").tag(1)
+                Grid(alignment: .leading, horizontalSpacing: 10, verticalSpacing: 12) {
+                    GridRow {
+                        FormLabel("Mode:")
+                        Picker("", selection: $model.removeMode) {
+                            Text("From Edge").tag(0)
+                            Text("At Range").tag(1)
+                        }
+                        .labelsHidden()
                     }
                     if model.removeMode == 0 {
-                        Picker("From", selection: $model.removeEdge) { ForEach(RemoveEdge.allCases, id: \.self) { Text($0.rawValue).tag($0) } }
-                        Stepper("Characters: \(model.removeCount)", value: $model.removeCount, in: 0...999)
+                        GridRow {
+                            FormLabel("Remove:")
+                            HStack(spacing: 16) {
+                                Picker("", selection: $model.removeEdge) {
+                                    ForEach(RemoveEdge.allCases, id: \.self) { Text($0.rawValue).tag($0) }
+                                }
+                                .labelsHidden()
+                                Stepper("Characters: \(model.removeCount)", value: $model.removeCount, in: 0...999)
+                            }
+                        }
                     } else {
-                        Stepper("Start: \(model.rangeStart)", value: $model.rangeStart, in: 0...999)
-                        Stepper("Count: \(model.rangeCount)", value: $model.rangeCount, in: 0...999)
-                        Toggle("Count from end", isOn: $model.rangeFromEnd)
+                        GridRow {
+                            FormLabel("Range:")
+                            HStack(spacing: 16) {
+                                Stepper("Start: \(model.rangeStart)", value: $model.rangeStart, in: 0...999)
+                                Stepper("Count: \(model.rangeCount)", value: $model.rangeCount, in: 0...999)
+                                Toggle("From end", isOn: $model.rangeFromEnd)
+                            }
+                        }
                     }
-                    PreserveExtensionToggle()
-                    Spacer()
+                    GridRow { Color.clear.frame(width: 95, height: 1); PreserveExtensionToggle() }
                 }
+
             case .extensionChange:
-                HStack {
-                    Picker("Action", selection: $model.extensionMode) {
-                        Text("Add").tag(0); Text("Replace").tag(1); Text("Remove").tag(2)
+                Grid(alignment: .leading, horizontalSpacing: 10, verticalSpacing: 12) {
+                    GridRow {
+                        FormLabel("Action:")
+                        Picker("", selection: $model.extensionMode) {
+                            Text("Add").tag(0)
+                            Text("Replace").tag(1)
+                            Text("Remove").tag(2)
+                        }
+                        .labelsHidden()
                     }
-                    if model.extensionMode != 2 { TextField("Extension", text: $model.extensionText).frame(width: 180) }
-                    Spacer()
+                    if model.extensionMode != 2 {
+                        GridRow { FormLabel("Extension:"); TextField("", text: $model.extensionText) }
+                    }
                 }
             }
+
+            Spacer(minLength: 0)
         }
         .textFieldStyle(.roundedBorder)
+        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
+    }
+}
+
+struct FormLabel: View {
+    let title: String
+
+    init(_ title: String) { self.title = title }
+
+    var body: some View {
+        Text(title)
+            .frame(width: 95, alignment: .trailing)
     }
 }
 
@@ -339,6 +548,30 @@ struct PreserveExtensionToggle: View {
     var body: some View { Toggle("Preserve extension", isOn: $model.preserveExtension) }
 }
 
+struct WindowFrameAutosave: NSViewRepresentable {
+    let name: String
+
+    func makeNSView(context: Context) -> NSView {
+        let view = NSView()
+        configure(windowFor: view)
+        return view
+    }
+
+    func updateNSView(_ nsView: NSView, context: Context) {
+        configure(windowFor: nsView)
+    }
+
+    private func configure(windowFor view: NSView) {
+        DispatchQueue.main.async {
+            view.window?.setFrameAutosaveName(name)
+        }
+    }
+}
+
+/*
+ The settings scene remains deliberately small; these choices control which
+ paths are admitted to the main list rather than the three-zone window layout.
+ */
 struct SettingsView: View {
     @EnvironmentObject private var model: RenameViewModel
     var body: some View {
