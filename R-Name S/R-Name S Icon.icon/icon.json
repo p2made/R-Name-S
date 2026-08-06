@@ -15,30 +15,6 @@
               -0.8812213632170369
             ]
           }
-        },
-        {
-          "hidden" : true,
-          "image-name" : "RName-Correction-Fluid-Bottle.svg",
-          "name" : "Correction Fluid Bottle S",
-          "position" : {
-            "scale" : 1,
-            "translation-in-points" : [
-              1.4560650108124378,
-              -0.8812399999999343
-            ]
-          }
-        },
-        {
-          "hidden" : true,
-          "image-name" : "swift-logo.svg",
-          "name" : "Swift Logo",
-          "position" : {
-            "scale" : 1,
-            "translation-in-points" : [
-              -27.6484375,
-              -29
-            ]
-          }
         }
       ],
       "name" : "Group",
