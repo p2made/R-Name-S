@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   width="1024"
-   height="1024"
-   viewBox="0 0 1023.9999 1024"
+   width="906.64618"
+   height="950.0014"
+   viewBox="0 0 906.64609 950.0014"
    version="1.1"
    id="svg298"
    sodipodi:docname="RName-Correction-Fluid-Bottle.svg"
@@ -24,9 +24,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      showgrid="false"
-     inkscape:zoom="0.23046875"
-     inkscape:cx="203.9322"
-     inkscape:cy="442.57627"
+     inkscape:zoom="0.70861471"
+     inkscape:cx="323.87135"
+     inkscape:cy="430.41726"
      inkscape:window-width="1440"
      inkscape:window-height="814"
      inkscape:window-x="0"
@@ -45,7 +45,7 @@
        y1="162.73755"
        x2="815.41071"
        y2="162.73755"
-       gradientTransform="matrix(0.60408962,0,0,1.1103841,106.60112,70.495883)"
+       gradientTransform="matrix(0.64974651,0,0,1.1944786,0.41652923,0.65482936)"
        gradientUnits="userSpaceOnUse">
       <stop
          offset="0"
@@ -74,7 +74,7 @@
        y1="314.25098"
        x2="192.17958"
        y2="562.09985"
-       gradientTransform="matrix(1.0909923,0,0,0.61482697,106.60112,70.495883)"
+       gradientTransform="matrix(1.3318403,0,0,0.75084085,-1.839212e-6,3.7855868e-7)"
        gradientUnits="userSpaceOnUse">
       <stop
          offset="0"
@@ -95,7 +95,7 @@
        y1="59.217838"
        x2="598.20306"
        y2="59.217838"
-       gradientTransform="matrix(0.68811489,0,0,0.97479582,106.60112,70.495883)"
+       gradientTransform="matrix(0.7401224,0,0,1.0486215,0.41652923,0.65482936)"
        gradientUnits="userSpaceOnUse">
       <stop
          offset="0"
@@ -120,7 +120,7 @@
        y1="444.043"
        x2="252.22491"
        y2="771.99426"
-       gradientTransform="matrix(0.82860784,0,0,0.80951622,106.60112,70.495883)"
+       gradientTransform="matrix(0.89123377,0,0,0.87082456,0.41652923,0.65482936)"
        gradientUnits="userSpaceOnUse">
       <stop
          offset="0"
@@ -137,7 +137,7 @@
        y1="630.22412"
        x2="813.16516"
        y2="630.22412"
-       gradientTransform="matrix(0.93916469,1.0457403e-4,7.9551447e-5,0.71422139,126.35653,67.789592)"
+       gradientTransform="matrix(0.98241994,8.7060231e-5,6.6228365e-5,0.74716313,143.39687,82.989693)"
        gradientUnits="userSpaceOnUse">
       <stop
          offset="0"
@@ -162,7 +162,7 @@
        y1="748.38385"
        x2="217.21173"
        y2="827.71112"
-       gradientTransform="matrix(0.98853738,1.1007158e-4,7.5578236e-5,0.67854948,126.35653,67.789592)"
+       gradientTransform="matrix(1.0340665,9.163706e-5,6.2920578e-5,0.70984594,143.39687,82.989693)"
        gradientUnits="userSpaceOnUse">
       <stop
          offset="0"
@@ -181,158 +181,145 @@
          stop-color="#7c858e"
          id="stop244" />
     </linearGradient>
+    <linearGradient
+       id="a"
+       x1="-134.494"
+       y1="-171.82001"
+       x2="-134.49699"
+       y2="-171.89"
+       gradientTransform="matrix(6000.0002,0,0,-5140.0001,807375.04,-882814.65)"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0"
+         stop-color="#f88535"
+         id="stop9" />
+      <stop
+         offset="1"
+         stop-color="#fd2221"
+         id="stop11" />
+    </linearGradient>
   </defs>
   <!-- Optional shadow: hide this group before importing flat artwork into Icon Composer. -->
   <!-- Bottle artwork. -->
   <!-- Brush and detached cap. Rotate, move, or hide this group independently. -->
+  <path
+     id="bottle-shoulders"
+     d="m 127.19172,282.11319 c 0,-31.87726 32.90337,-54.49983 86.37134,-71.98091 v -37.01876 h 162.46039 v 37.01876 c 52.43975,17.48108 86.37135,40.10365 86.37135,71.98091 0,47.30175 -73.00436,78.15071 -167.60154,78.15071 -94.59719,0 -167.60154,-30.84896 -167.60154,-78.15071 z"
+     fill="url(#shoulderFill)"
+     stroke="#6c747b"
+     stroke-width="5"
+     style="display:none;fill:url(#shoulderFill)" />
+  <path
+     id="label-accent"
+     d="m 144.67163,433.27312 c 63.75028,-35.99046 198.44845,-40.10366 284.8198,-11.31129 25.70575,9.25469 33.9316,31.87726 22.62106,56.55643 -15.42345,31.87727 -48.32682,40.10366 -85.34311,27.76407 -75.06081,-24.67917 -142.92401,-20.56598 -204.61783,4.1132 -22.62107,-18.50938 -29.81868,-50.38665 -17.47992,-77.12241 z"
+     fill="#c72b37"
+     style="display:none;stroke-width:0.819005" />
   <g
-     id="g340"
-     transform="matrix(1.2207604,0,0,1.221223,-130.13443,-86.091195)"
-     style="stroke-width:0.819006">
+     id="g1685"
+     transform="matrix(1.1349791,0,0,1.1352457,-0.4727538,-0.74339184)"
+     style="stroke-width:0.88097">
     <g
-       id="00-reference-shadow"
-       opacity="0.18"
-       style="stroke-width:0.670771">
-      <ellipse
-         cx="451"
-         cy="855"
-         rx="250"
-         ry="54"
-         fill="#071226"
-         id="ellipse249"
-         style="stroke-width:0.549366" />
-      <ellipse
-         cx="719"
-         cy="807"
-         rx="208"
-         ry="39"
-         fill="#071226"
-         transform="rotate(-18,719,807)"
-         id="ellipse251"
-         style="stroke-width:0.549366" />
-    </g>
-    <g
-       id="10-bottle"
-       style="stroke-width:0.819006">
-      <!-- Main cylindrical body -->
+       id="g1659"
+       style="stroke-width:0.88097">
       <path
          id="bottle-body"
-         d="m 246,347 c 0,-45 36,-71 81,-89 v -32 h 188 v 32 c 46,18 81,44 81,89 v 415 c 0,62 -42,96 -103,109 -46,10 -99,10 -145,0 C 287,858 246,824 246,762 Z"
+         d="m 114.85336,285.19744 c 0,-46.27345 37.01629,-73.00922 83.28666,-91.51859 v -32.90557 h 193.30729 v 32.90557 c 47.2986,18.50937 83.28666,45.24514 83.28666,91.51859 v 426.744 c 0,63.75453 -43.18567,98.71669 -105.90772,112.08457 -47.2986,10.28299 -101.7948,10.28299 -149.0934,0 C 157.01081,810.65813 114.85336,775.69597 114.85336,711.94144 Z"
          fill="url(#bodyFill)"
          stroke="#27313a"
-         stroke-width="10.6471"
+         stroke-width="11.4526"
          stroke-linejoin="round"
          style="fill:url(#bodyFill)" />
-      <!-- Shoulder volume -->
-      <path
-         id="bottle-shoulders"
-         d="m 258,344 c 0,-31 32,-53 84,-70 v -36 h 158 v 36 c 51,17 84,39 84,70 0,46 -71,76 -163,76 -92,0 -163,-30 -163,-76 z"
-         fill="url(#shoulderFill)"
-         stroke="#6c747b"
-         stroke-width="4.09503"
-         style="fill:url(#shoulderFill)" />
-      <!-- Neck -->
       <path
          id="bottle-neck"
-         d="m 344,117 c 0,-26 34,-42 77,-42 43,0 77,16 77,42 v 140 c 0,24 -34,40 -77,40 -43,0 -77,-16 -77,-40 z"
+         d="m 215.61993,48.688715 c 0,-26.735769 34.95983,-43.18855 79.17374,-43.18855 44.2139,0 79.17373,16.452781 79.17373,43.18855 V 192.65055 c 0,24.67917 -34.95983,41.13195 -79.17373,41.13195 -44.21391,0 -79.17374,-16.45278 -79.17374,-41.13195 z"
          fill="url(#neckFill)"
          stroke="#27313a"
-         stroke-width="9.00907"
+         stroke-width="9.69067"
          style="fill:url(#neckFill)" />
-      <!-- Open mouth -->
       <ellipse
-         cx="421"
-         cy="117"
-         rx="77"
-         ry="42"
+         cx="294.79367"
+         cy="48.688713"
+         rx="79.173737"
+         ry="43.188549"
          fill="#c8cdd1"
          stroke="#27313a"
-         stroke-width="9.00907"
+         stroke-width="9.69067"
          id="ellipse257" />
       <ellipse
-         cx="421"
-         cy="113"
-         rx="53"
-         ry="25"
+         cx="294.79367"
+         cy="44.57552"
+         rx="54.496204"
+         ry="25.70747"
          fill="#59626a"
          id="ellipse259"
-         style="stroke-width:0.670771" />
+         style="stroke-width:0.721519" />
       <ellipse
-         cx="421"
-         cy="108"
-         rx="40"
-         ry="15"
+         cx="294.79367"
+         cy="39.434025"
+         rx="41.129211"
+         ry="15.424482"
          fill="#20272d"
          id="ellipse261"
-         style="stroke-width:0.670771" />
-      <!-- Thread rings -->
+         style="stroke-width:0.721519" />
       <path
-         d="m 340,151 c 38,22 124,22 162,0"
+         d="m 211.50701,83.650874 c 39.07275,22.622576 127.50056,22.622576 166.57331,0"
          fill="none"
          stroke="#8c949a"
-         stroke-width="9.82808"
+         stroke-width="10.5717"
          stroke-linecap="round"
          id="path263" />
       <path
-         d="m 340,184 c 38,22 124,22 162,0"
+         d="m 211.50701,117.58473 c 39.07275,22.62258 127.50056,22.62258 166.57331,0"
          fill="none"
          stroke="#8c949a"
-         stroke-width="9.82808"
+         stroke-width="10.5717"
          stroke-linecap="round"
          id="path265" />
       <path
-         d="m 344,217 c 37,21 117,21 154,0"
+         d="m 215.61993,151.51859 c 38.04452,21.59428 120.30295,21.59428 158.34747,0"
          fill="none"
          stroke="#8c949a"
-         stroke-width="9.82808"
+         stroke-width="10.5717"
          stroke-linecap="round"
          id="path267" />
-      <!-- Blank label, ready for your own mark or colour treatment -->
       <path
          id="bottle-label"
-         d="m 258,443 c 90,31 236,31 326,0 v 294 c -90,31 -236,31 -326,0 z"
+         d="m 127.19213,383.91412 c 92.54072,31.87727 242.66235,31.87727 335.20308,0 v 302.31985 c -92.54073,31.87726 -242.66236,31.87726 -335.20308,0 z"
          fill="url(#labelFill)"
          stroke="#0b1b39"
-         stroke-width="5.73305"
+         stroke-width="6.16679"
          style="fill:url(#labelFill)" />
-      <!-- Red accent inherited from the historical icon, deliberately text-free -->
       <path
-         id="label-accent"
-         d="m 275,491 c 62,-35 193,-39 277,-11 25,9 33,31 22,55 -15,31 -47,39 -83,27 -73,-24 -139,-20 -199,4 -22,-18 -29,-49 -17,-75 z"
-         fill="#c72b37"
-         style="stroke-width:0.670771" />
-      <!-- Small-scale highlights -->
-      <path
-         d="m 290,379 c 12,-20 31,-33 54,-43 v 478 c -28,-9 -50,-29 -54,-60 z"
+         d="m 160.0955,318.103 c 12.33876,-20.56598 31.87514,-33.93386 55.52443,-44.21685 v 491.52683 c -28.79045,-9.25469 -51.41151,-29.82067 -55.52443,-61.69793 z"
          fill="#ffffff"
          opacity="0.22"
          id="path271"
-         style="stroke-width:0.670771" />
+         style="stroke-width:0.721519" />
       <path
-         d="m 546,388 c 14,-13 25,-27 34,-45 v 413 c -3,29 -21,51 -42,62 z"
+         d="m 423.32245,327.35769 c 14.39523,-13.36789 25.70576,-27.76407 34.95983,-46.27345 v 424.68741 c -3.08469,29.82066 -21.59283,52.44324 -43.18567,63.75452 z"
          fill="#26323d"
          opacity="0.12"
          id="path273"
-         style="stroke-width:0.670771" />
+         style="stroke-width:0.721519" />
     </g>
     <g
        id="20-brush"
-       transform="rotate(-18,690,727)"
-       style="stroke-width:0.819006">
+       transform="matrix(0.97790506,-0.3177618,0.31774062,0.97797026,-334.36436,184.22223)"
+       style="stroke-width:0.856754">
       <!-- Cap body -->
       <path
          id="cap-body"
          d="m 666,555 h 198 c 37,0 63,29 63,66 v 64 c 0,37 -26,66 -63,66 H 666 Z"
          fill="url(#capFill)"
          stroke="#27313a"
-         stroke-width="10.6471"
+         stroke-width="11.1378"
          stroke-linejoin="round"
          style="fill:url(#capFill)" />
       <!-- Cap ribs -->
       <path
          d="M 744,569 V 737 M 782,569 V 737 M 820,569 V 737 M 858,569 V 737"
          stroke="#c8cdd1"
-         stroke-width="9.82808"
+         stroke-width="10.2811"
          id="path277" />
       <!-- Cap opening -->
       <ellipse
@@ -342,7 +329,7 @@
          ry="98"
          fill="#c7ccd0"
          stroke="#27313a"
-         stroke-width="10.6471"
+         stroke-width="11.1378"
          id="ellipse279" />
       <ellipse
          cx="666"
@@ -351,7 +338,7 @@
          ry="68"
          fill="#eef0f1"
          stroke="#9fa6ac"
-         stroke-width="7.37106"
+         stroke-width="7.71079"
          id="ellipse281" />
       <ellipse
          cx="666"
@@ -360,20 +347,20 @@
          ry="47"
          fill="#a5adb4"
          id="ellipse283"
-         style="stroke-width:0.670771" />
+         style="stroke-width:0.701686" />
       <!-- Brush stem -->
       <path
          d="M 665,653 H 343"
          fill="none"
          stroke="#737c84"
-         stroke-width="26.2082"
+         stroke-width="27.4161"
          stroke-linecap="round"
          id="path285" />
       <path
          d="M 656,643 H 355"
          fill="none"
          stroke="#eef0f1"
-         stroke-width="7.37106"
+         stroke-width="7.71079"
          stroke-linecap="round"
          opacity="0.85"
          id="path287" />
@@ -382,7 +369,7 @@
          d="m 355,623 -90,7 v 46 l 90,7 z"
          fill="url(#brushMetal)"
          stroke="#444d55"
-         stroke-width="5.73305"
+         stroke-width="5.99728"
          stroke-linejoin="round"
          id="path289"
          style="fill:url(#brushMetal)" />
@@ -391,21 +378,21 @@
          d="m 267,629 c -42,-4 -86,6 -134,25 48,22 92,30 134,22 z"
          fill="#f8f9f9"
          stroke="#5b646c"
-         stroke-width="5.73305"
+         stroke-width="5.99728"
          stroke-linejoin="round"
          id="path291" />
       <path
          d="m 246,643 c -35,1 -65,9 -93,13"
          fill="none"
          stroke="#c8cdd1"
-         stroke-width="4.09503"
+         stroke-width="4.28377"
          stroke-linecap="round"
          id="path293" />
       <path
          d="m 249,662 c -38,2 -66,-2 -95,-6"
          fill="none"
          stroke="#ffffff"
-         stroke-width="4.09503"
+         stroke-width="4.28377"
          stroke-linecap="round"
          id="path295" />
     </g>
@@ -419,4 +406,9 @@
       </cc:Work>
     </rdf:RDF>
   </metadata>
+  <path
+     d="m 355.73839,497.71047 c 0,0 39.29574,22.46901 49.5795,58.16403 9.26615,32.2431 1.84565,47.63129 1.84565,47.63129 a 56.348975,56.362211 0 0 1 11.01065,17.7021 30.497342,30.504506 0 0 1 1.83299,28.15266 c 0,0 -0.63205,-13.15013 -20.22621,-15.87498 -17.95708,-2.52889 -24.48636,14.95825 -58.78245,14.11109 a 116.52197,116.54934 0 0 1 -95.37925,-52.85973 c 16.75616,9.14187 38.70793,23.33515 66.04492,21.15401 27.337,-2.18115 33.04458,-10.58332 33.04458,-10.58332 A 422.85436,422.95369 0 0 1 263.8924,520.69791 c 21.49035,17.98659 74.72322,53.78276 73.48436,52.87237 a 479.27287,479.38545 0 0 1 -53.25182,-61.74239 c 0,0 79.86828,65.6811 86.29642,65.26385 2.64204,-5.44339 16.30107,-33.62135 -14.6893,-79.38759 z"
+     style="fill:url(#a);stroke-width:24.9998"
+     id="path18"
+     inkscape:label="swift-logo" />
 </svg>
