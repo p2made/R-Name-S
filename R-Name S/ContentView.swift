@@ -9,7 +9,10 @@ struct RNameSApp: App {
 
     var body: some Scene {
         WindowGroup("R-Name S") { ContentView().environmentObject(model) }
-            .defaultSize(width: 980, height: 650)
+            .defaultSize(
+                width: MainWindowMetrics.initialWidth,
+                height: MainWindowMetrics.initialHeight
+            )
             .windowResizability(.contentMinSize)
             .commands {
                 CommandGroup(after: .newItem) {
@@ -254,89 +257,44 @@ final class RenameViewModel: ObservableObject {
     }
 }
 
-struct ContentView: View {
-    @EnvironmentObject private var model: RenameViewModel
-    private let controlsHeight: CGFloat = 360
-    private let actionColumnWidth: CGFloat = 230
-
-    var body: some View {
-        VStack(spacing: 14) {
-            HStack(alignment: .top, spacing: 18) {
-                VStack(spacing: 10) {
-                    Picker("Rename operation", selection: $model.kind) {
-                        ForEach(OperationKind.allCases) { operation in
-                            Text(operation.rawValue).tag(operation)
-                        }
-                    }
-                    .labelsHidden()
-                    .pickerStyle(.menu)
-                    .frame(maxWidth: .infinity)
-
-                    GroupBox("Settings") {
-                        OperationEditor()
-                            .padding(.top, 4)
-                            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
-                    }
-                    .frame(maxWidth: .infinity, maxHeight: .infinity)
-                }
-                .frame(maxWidth: .infinity, maxHeight: .infinity)
-
-                ActionColumn()
-                    .frame(width: actionColumnWidth, height: controlsHeight)
-            }
-            .frame(height: controlsHeight)
-
-            RenameItemsTable()
-                .frame(maxWidth: .infinity, maxHeight: .infinity)
-        }
-        .padding(18)
-        .frame(minWidth: 820, minHeight: 580)
-        .background(WindowFrameAutosave(name: "RNameSMainWindow"))
-        .dropDestination(for: URL.self) { urls, _ in
-            model.add(urls: urls)
-            return true
-        }
-    }
-}
-
-struct ActionColumn: View {
+struct SourceAndActionsView: View {
     @EnvironmentObject private var model: RenameViewModel
 
     var body: some View {
-        VStack(spacing: 12) {
+        VStack(spacing: 6) {
             GroupBox("Add to List") {
-                VStack(alignment: .leading, spacing: 9) {
+                VStack(alignment: .leading, spacing: 5) {
                     Toggle("Files", isOn: $model.includeFiles)
                     Toggle("Folders", isOn: $model.includeFolders)
                     Toggle("Recurse Folder", isOn: $model.includeFolderContents)
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)
-                .padding(.vertical, 2)
+                .controlSize(.small)
             }
 
-            Spacer(minLength: 12)
+            Spacer(minLength: 2)
 
             Button("Show New Names") { model.showNewNames() }
                 .buttonStyle(.borderedProminent)
-                .controlSize(.large)
+                .controlSize(.small)
                 .frame(maxWidth: .infinity)
                 .disabled(model.items.isEmpty)
 
             Button("Clear List") { model.clearItems() }
-                .controlSize(.large)
+                .controlSize(.small)
                 .frame(maxWidth: .infinity)
                 .disabled(model.items.isEmpty)
 
             Button("Rename Now") { model.rename() }
-                .controlSize(.large)
+                .controlSize(.small)
                 .frame(maxWidth: .infinity)
                 .keyboardShortcut(.return, modifiers: [.command])
                 .disabled(!model.canRename)
 
-            Spacer(minLength: 4)
+            Spacer(minLength: 0)
 
             Text(model.status)
-                .font(.caption)
+                .font(.caption2)
                 .foregroundStyle(model.previewIsValid || model.items.isEmpty ? .secondary : .primary)
                 .lineLimit(2)
                 .frame(maxWidth: .infinity, alignment: .leading)
@@ -344,6 +302,7 @@ struct ActionColumn: View {
             ProgressView(value: model.progress, total: 1)
                 .progressViewStyle(.linear)
         }
+        .padding(8)
     }
 }
 
