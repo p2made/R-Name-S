@@ -1,6 +1,6 @@
 # R-Name S
 
-![R-Name S](./images/icon_256x256.png)
+![R-Name S](./images/icon_128x128.png)
 
 #### 2018-05-18
 
